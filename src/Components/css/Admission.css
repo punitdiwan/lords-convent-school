@@ -1,0 +1,157 @@
+.latest_card_box_ad{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ladmleft{
+width: 50%;
+height: 500px;
+background-color:#2E63B1;
+color: white;
+}
+
+.ladmleft .title p{
+font-size: 1.2vmax;
+}
+
+
+.ladmright{
+width: 50%;
+height: 500px;
+background-color: #1D4776;
+color: white;
+
+}
+
+.ladmright .title p{
+font-size: 1.2vmax;
+}
+.card_img{
+height: 200px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+.readbutton{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+.adm{
+background-color: #F59902;
+color: white;
+border-radius:0px;
+font-size: 1.2vmax;
+}
+
+
+@media screen and (max-width:768px){
+    .latest_card_box_ad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ladmleft{
+        width: 100%;
+        height: 500px;
+        }
+        .ladmright{
+            width: 100%;
+            height: 500px;
+            color: white;
+            }
+            .ladmright .title p{
+                font-size: 15px;
+                }
+                .ladmleft .title p{
+                    font-size: 15px;
+                    }
+                    .adm{
+                        font-size: 15px;
+                    }
+}
+
+
+@media screen and (max-width:400px){
+    .adm{
+        padding: 5px 10px;
+        }
+
+        .ladmleft{
+            width: 100%;
+            height: 450px;
+            }
+            .ladmright{
+                width: 100%;
+                height: 450px;
+                color: white;
+                }
+        
+}
+
+@media screen and (max-width:600px){
+    .adm{
+        padding: 5px 10px;
+        }
+
+        .ladmleft{
+            width: 100%;
+            height: 400px;
+            }
+            .ladmright{
+                width: 100%;
+                height: 400px;
+                color: white;
+                }
+        
+}
+
+
+        @media screen and (max-width:400px){
+            .adm{
+                padding: 5px 10px;
+                }
+        
+                .ladmleft{
+                    width: 100%;
+                    height: 500px;
+                    }
+                    .ladmright{
+                        width: 100%;
+                        height: 500px;
+                        color: white;
+                        }
+                
+        }
+
+
+
+        @media screen and (max-width:350px){
+    
+            .title .lnns{
+                font-size: 20px;
+            }
+            .title p{
+                font-size: 8px;
+            }
+            .ladmleft{
+                width: 100%;
+                height: 550px;  
+                }
+                .ladmright{
+                    width: 100%;
+                    height: 550px;
+                    color: white;
+                    }
+}

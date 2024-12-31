@@ -1,0 +1,191 @@
+.liscontainer{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.facilitycontent{
+    font-size: 20px;
+    color: #090909;
+}
+.liscamplogo{
+    height: 500px;
+    width: 100%;
+}
+.liscamplogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.linkwrap{
+  word-wrap: break-word; 
+  font-size: 23px;
+}
+
+
+.facilitCard{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: rgba(197, 188, 245, 0.726);
+
+}
+.facilitCard:nth-child(2){
+   
+    background-color: rgba(180, 255, 173, 0.726);
+
+}
+
+.facilitCard:nth-child(3){
+   
+    background-color: rgba(255, 196, 173, 0.726);
+
+}
+
+.facilitCard:nth-child(4){
+   
+    background-color: rgba(221, 160, 245, 0.726);
+
+}
+
+
+
+.facilitCard:nth-child(5){
+   
+    background-color: rgba(243, 162, 232, 0.726);
+
+}
+.facilitCard:nth-child(6){
+   
+    background-color: rgba(173, 255, 177, 0.726);
+
+}
+
+.facilitCard:nth-child(7){
+   
+    background-color: rgba(173, 252, 255, 0.726);
+
+}
+.facilitCard:nth-child(8){
+   
+    background-color: rgba(252, 191, 244, 0.726);
+
+}
+.facilimages{
+    width: 20%;
+    height: 100%;
+}
+
+.facilimages img{
+    width: 100%;
+    height: 100%;
+}
+.facontent{
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    text-align: left;
+    padding: 20px 30px;
+}
+.facontent .factitle{
+    color: black;
+    font-weight: bold;
+}
+.facontent p{
+    color: black;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .liscamplogo{
+        height: 300px;
+        width: 100%;
+    }
+    .facilitycontent{
+        font-size: 16px;
+
+    }
+    .linkwrap{
+        word-wrap: break-word; 
+        font-size: 19px;
+      }
+
+      .facilitCard{
+        height: auto;
+        width: 100%;        
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(197, 188, 245, 0.726);
+    
+    }
+    .liscamplogo{
+        display: none;
+    }
+
+    .facilimages{
+        width: 100%;
+        height:400px;
+    }
+    
+    
+    .facontent{
+    text-align: center;
+    padding: 20px;
+    /* background-color: red; */
+}
+    .facontent .factitle{
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .facontent p{
+        color: black;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .facilimages{
+        width: 100%;
+        height:350px;
+    }
+    .facontent .factitle{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:414px){
+    .facilimages{
+        width: 100%;
+        height:280px;
+    }
+    .facontent .factitle{
+        font-size: 22px;
+    }
+}
+     
+
+@media screen and (max-width:380px){
+    .facilimages{
+        width: 100%;
+        height:250px;
+    }
+    .facontent .factitle{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

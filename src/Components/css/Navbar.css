@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ascender Serif";
+}
+
+.navmain {
+    background-color: #1D4776;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.navleft .logo {
+    height: 7vw;
+    width: 7vw;
+
+}
+
+.navleft .logo img {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.navmid {
+    color: white;
+    text-align: center;
+    width: 65%;
+}
+
+
+.socialmedia {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.socialmedia i {
+    font-size: 2vmax;
+}
+
+.navright {
+    /* width: 15vw; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* background-color: red; */
+}
+
+.seacrch {
+    display: flex;
+
+
+}
+
+.seacrch .btn {
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border: none;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.aa {
+    border: white;
+    height: 30px;
+}
+
+
+.nextnavbar {
+    font-size: 1.3vmax;
+    color: #313C74;
+}
+
+.loginbtn {
+    color: white;
+    background-color: #EF4444;
+}
+
+.nextnavbar .loginbtn {
+    color: white;
+}
+
+.nextnavbar .loginbtn:hover {
+    background-color: #EF4444;
+
+}
+
+.navbar-toggler {
+    border: none;
+
+}
+
+.navbar-toggler:focus {
+    outline: none;
+
+}
+
+#firsth {
+    font-size: 4vw;
+}
+
+.navmid h1 {
+    font-size: 3vw;
+}
+
+@media screen and (max-width:768px) {
+    .navmain {
+        flex-direction: column;
+        padding: 13px 0px 18px 0px;
+
+    }
+
+    .navleft {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .navmid {
+        width: 100%;
+    }
+
+    .navright {
+        width: 100%;
+    }
+
+    .socialmedia {
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .socialmedia i {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        color: #2F3A72;
+        font-weight: bold;
+    }
+
+    .navtoggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navleft .logo {
+        height: auto;
+        width: 20vw;
+    }
+
+    .navmid h1 {
+        font-size: 22px;
+    }
+
+    #firsth {
+        font-size: 28px;
+    }
+
+    .aa {
+        height: 30px;
+
+    }
+
+    .seacrch .btn {
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .socialmedia i {
+        font-size: 20px;
+    }
+
+    .navmid p {
+        font-size: 12px;
+    }
+
+    .socialmedia {
+        width: 30vw;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .navmain {
+        flex-direction: column;
+        padding: 13px 0px 18px 0px;
+    }
+
+    .navleft {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .navmid {
+        width: 100%;
+    }
+
+    .navright {
+        width: 100%;
+    }
+
+    .socialmedia {
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .socialmedia i {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        color: #2F3A72;
+        font-weight: bold;
+    }
+
+    .navtoggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navleft .logo {
+        height: auto;
+        width: 20vw;
+    }
+
+    .navmid h1 {
+        font-size: 15px;
+    }
+
+    #firsth {
+        font-size: 23px;
+    }
+
+    .aa {
+        height: 30px;
+
+    }
+
+    .seacrch .btn {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .socialmedia i {
+        font-size: 20px;
+    }
+
+    .navmid p {
+        font-size: 12px;
+    }
+
+    .socialmedia {
+        width: 30vw;
+    }
+}

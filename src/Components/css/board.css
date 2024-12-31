@@ -1,0 +1,399 @@
+
+.ourschoolboard{
+    width: 50%;
+    text-align: center;
+    z-index: 999;
+    padding: 20px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #1D4974;
+    background-color:#C0D1D7;
+
+}
+
+
+.princd{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: auto;
+    display: flex;
+    padding:30px 10px;
+    background-color: #dbe1e7;
+}
+
+.kalur{
+    text-align: center;
+}
+.princd .photos{
+    height: 85%;
+  width: 22%;
+  margin: 0px 20px
+}
+
+.princd .director_mess{
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  border: 1px solid rgb(196, 193, 193);
+
+}
+.princd .photos img{
+    height: 100%;
+    width: 100%;
+  }
+
+.phname{
+    font-size: 13px;
+    height: 20%;
+    background-color: rgb(163, 177, 177);
+    color: rgb(2, 2, 2);
+    padding: 5px;
+}
+.latest_card_box_ad{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ourschoolboardeft{
+color: rgb(2, 2, 2);
+}
+.mnc{
+    text-decoration: none;
+}
+
+
+
+.ourschoolboardrighttt{
+width: 40%;
+color: rgb(14, 13, 13);
+;
+
+
+}
+.bbb{
+    color: black;
+
+}
+
+.noblebtn{
+    background-color:#1D4776;
+    color: wheat;
+}
+.noblebtn:hover{
+    background-color:#1D4776;
+
+}
+
+
+
+.navserboard{
+    flex-direction: column;
+    width: 75%;
+    display: flex;
+}
+
+
+.didyou{
+    font-size: 18px;
+    color: black !important;
+    text-align: left;
+}
+.kalurr{
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .latest_card_box_ad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kalur{
+        text-align: left;
+    }
+    .kalurr{
+        text-align: center;
+    }
+    .ourschoolboardeft{
+        width: 100%;
+        margin-top: 20px;
+        }
+        .ourschoolboardright{
+            width: 100%;
+            color: white;
+            }
+          
+                
+                   
+                    .bbb{
+                        color: black;
+                        font-size: 15px;
+                        
+                    }
+                    .admcon{
+                        font-size:15px ;
+                    }
+                  
+                    .ourschoolboard{
+                        width: 80%;
+                        padding: 10px 10px;
+                        word-wrap: normal;
+                        font-size: 13px;
+
+                    }
+                    .ourschoolboard h1{
+                        font-size: 18px;
+                    }
+                    .titlecontact222{
+                        display: none;
+                    }
+
+                    .princd{
+                        height: 400px;
+                        width: 100%;
+                
+                
+                    }
+                
+                   
+                    .princd .photos{
+                        height:150px;
+                     width: 150px;
+                    }
+                    
+                    .princd .director_mess{
+                      width: 100%;
+                      font-size: 12px;
+                      
+                    
+                    }
+                   
+                    .phname{
+                        background-color: rgb(163, 177, 177);
+                        color: rgb(2, 2, 2);
+                        padding: 5px;
+                        font-size: 10px;
+                    }
+                
+                    
+}
+
+
+@media screen and (max-width:1100px){
+    .princd{
+        margin-top:0px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        height: 450px;
+        width: 100%;
+
+    }
+
+   
+    .princd .photos{
+        height:150px;
+     width: 190px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 14px;
+      
+    
+    }
+
+    
+    .phname{
+        padding: 5px;
+    }
+
+  
+    
+}
+
+
+@media screen and (max-width:600px){
+    
+    .princd{
+        margin-top:0px;
+        margin-bottom: 20px;
+        padding:30px 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        height: 420px;
+        width: 100%;
+
+
+    }
+
+   
+    .princd .photos{
+        height:150px;
+     width: 150px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 12px;
+      
+    
+    }
+   
+    .phname{
+        background-color: rgb(163, 177, 177);
+        color: rgb(2, 2, 2);
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:500px){
+    
+    .princd{
+        margin-top:0px;
+        height: 400px;
+        width: 100%;
+
+
+    }
+
+   
+    .princd .photos{
+        height:120px;
+     width: 150px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 12px;
+      
+    
+    }
+    .princd .director_mess h5{
+        width: 100%;
+        font-size: 15px;
+        
+      
+      }
+   
+    .phname{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width:450px){
+    .princd{
+        height: 350px;
+        width: 100%;
+
+
+    }
+
+   
+    .princd .photos{
+        height:90px;
+     width: 120px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 10px;
+      
+    
+    }
+    .princd .director_mess h5{
+        width: 100%;
+        font-size: 12px;
+        
+      
+      }
+   
+    .phname{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .princd{
+        height: 340px;
+        padding: 10px 10px;
+        width: 100%;
+
+
+    }
+
+   
+    .princd .photos{
+        height:90px;
+     width: 120px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 10px;
+      
+    
+    }
+    .princd .director_mess h5{
+        width: 100%;
+        font-size: 12px;
+        
+      
+      }
+   
+    .phname{
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width:315px){
+    .princd{
+        height: 370px;
+        padding: 10px 10px;
+        width: 100%;
+
+
+    }
+
+   
+    .princd .photos{
+        height:80px;
+      margin: 0px 20px;
+    }
+    
+    .princd .director_mess{
+      width: 100%;
+      font-size: 10px;
+      
+    
+    }
+    .princd .director_mess h5{
+        width: 100%;
+        font-size: 10px;
+        
+      
+      }
+   
+    .phname{
+        font-size: 7px;
+    }
+}

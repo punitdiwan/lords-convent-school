@@ -1,0 +1,223 @@
+.latest_card_box_hls{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.heading{
+font-size: 2.1vmax;
+padding: 10px 10vmax;
+color: #1D4776;
+font-weight: bold;
+}
+
+.hlsleft{
+width: 22%;
+
+}
+
+.hlsleft .title p{
+font-size: 1.2vmax;
+}
+.hlsmid{
+width: 56%;
+}
+
+.hlsmid p{
+font-size: 1.2vmax;
+}
+
+.hlsright{
+width: 22%;
+}
+
+.hlsright .title p{
+font-size: 1.2vmax;
+}
+
+.card_imgl{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: red; */
+}
+.card_imgl img{
+
+height:160px;
+width: 160px;
+}
+
+.card_img{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+
+.title1{
+    display: flex;
+    align-items: center;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.hlstbutton1{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.kophl{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    background-color: #1D4776;
+
+}
+.kophl:hover{
+    padding: 10px 20px;
+    background-color: #1D4776;
+    color: white;
+
+}
+.hls{
+background-color: #1D4776;
+color: white;
+border-radius:0px;
+font-size: 1.2vmax;
+}
+
+.ccc1_img{
+
+    height: 500px;
+    width: 100%;
+   
+    
+}
+.ccc1_img img{
+    height: 100%;
+    width: 100%;     
+}
+.ccc2_img{
+
+    height: 300px;
+    width: 100%;
+  
+
+}
+.ccc2_img img{
+    height: 100%;
+    width: 100%;     
+}
+
+@media screen and (max-width:768px){
+    .latest_card_box_hls{
+        flex-direction: column;
+    }
+    .hlsleft{
+        width: 100%;
+        
+        }
+        .hlsmid{
+            width: 100%;
+            
+            }
+            .hlsright{
+                width: 100%;
+                
+                }
+                .hlstbutton1{
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    /* justify-content: space-around;    */
+                    }
+                    .hlstbutton1 a{
+                        margin: 0px 10px;
+
+                    }
+                    
+                    .card_imgl img{
+                       
+                        height:110px;
+width: 110px;
+                        }
+                        .hls{
+                            background-color: #1D4776;
+                            color: white;
+                            border-radius:0px;
+                            font-size: 15px;
+                            }
+                            .hlsmid  p{
+                                font-size: 15px;
+                                }
+                                .ccc1_img{
+
+                                    height: 450px;
+                                   
+                                    
+                                }
+                               
+                                .ccc2_img{
+                                
+                                    height: 280px;
+                                    width: 100%;
+                                  
+                                
+                                }
+                               
+                               
+}
+
+
+
+@media screen and (max-width:500px){
+  
+               
+                   
+                    .card_imgl img{
+                       
+                        height:100px;
+width: 100px;
+                        }
+                        .kophl{
+                            padding: 10px 18px;
+                            font-size: 13px;
+                        }
+                        
+                       
+}
+
+@media screen and (max-width:400px){
+  
+               
+   
+    .card_imgl img{
+        height:90px;
+        width: 90px;
+        }
+        .kophl{
+            padding: 8px 15px;
+            font-size: 12px;
+        }
+        .ccc1_img{
+
+            height: 440px;
+           
+            
+        }
+       
+        .ccc2_img{
+        
+            height: 260px;
+            width: 100%;
+          
+        
+        }
+       
+}

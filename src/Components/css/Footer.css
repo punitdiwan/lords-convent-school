@@ -1,0 +1,279 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footermain{
+    background-color: #1D4776;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0;
+
+}
+.footerleft .logo {
+    height: auto;
+ width: 9vw;
+}
+.footerleft .logo img{
+ height: 100%;
+ width: 100%;
+ /* background-color: red; */
+}
+
+
+
+.footermid{
+    color: white;
+    width: 33%;
+   
+}
+.footerleft{
+ width: 33%;
+ display: flex;
+ align-items: center;
+justify-content: center;
+}
+
+.fbrightt{
+    width: 33%;
+
+
+}
+
+
+.socialmedia1{
+    width: 5vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.socialmedia1 i{
+    font-size: 2vmax;
+}
+
+/* .navright{
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+.seacrch{
+    display: flex;
+    
+    
+}
+.aa{
+    width: 20vw;
+    border: white;
+
+
+}
+.seacrch .btn{
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border: none;
+}
+.ri-search-line{
+    color: rgb(31, 29, 29);
+}
+.copyright{
+    width: 100%;
+    /* background-color: red; */
+
+}
+.copyright p{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+#copyr{
+    color: white;
+    font-size: 1.3vmax;
+    
+}
+
+.footerbottm{
+    display: flex;
+    color: white;
+    
+}
+.footerbottm li{
+    list-style: none;
+}
+.footerbottm a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vmax;
+    margin: 20px 0px;
+
+}
+
+.fbleft{
+    padding: 2vmax;
+    /* width: 15vw; */
+    text-align: left;
+}
+
+.fbright{
+    text-align: left;
+    padding: 2vmax;
+
+}
+.fbtm{
+    background-color: #1D4776;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+
+}
+.fbtm p{
+    margin: 0;
+    text-align: left;
+    font-size: 1.3vmax;
+}
+
+
+@media screen and (max-width:768px){
+    .footermain{
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .footerbottm a{
+        font-size: 15px;
+    
+    }
+    .fbtm p{
+        font-size: 15px;
+    }
+    .footerleft .logo {
+     width: 15vw;
+    }
+    .footerleft{
+        margin-top: 0px;
+        text-align: center;
+        width: 100%;
+
+       }
+       .footermid{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+
+    }
+    
+    
+    .fbrightt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 18px;
+    
+    }
+
+
+       .fbright{
+        padding: 2vmax;
+    
+    }
+    .seacrch .btn{
+        color: rgb(255, 255, 255);
+        border-radius: 0px;
+        border: none;
+    }
+    .ri-search-line{
+        color: rgb(31, 29, 29);
+        font-size: 15px;
+    }
+    .copyright{
+        width:100%;
+        
+    
+    }
+    #copyr{
+        color: white;
+        font-size: 15px;
+        /* background-color: red; */
+
+  justify-content: center;
+
+        
+    }
+    .socialmedia1{
+        width: 25vw; 
+        text-align: center;
+    }
+    .socialmedia1 i{
+        font-size: 25px;
+    }
+
+    .aa{
+        width: 50vw;
+        border: white;
+    
+    
+    }
+    
+}
+@media screen and (max-width:700px){
+    .fbtm p{
+        font-size: 14px;
+    }
+   
+
+    .copyright{
+        width:100%;
+    
+    }
+}
+
+
+
+@media screen and (max-width:550px){
+   
+   
+    .fbtm p{
+        font-size: 13px;
+    }
+   
+  
+    .copyright{
+        width: 100%;
+    
+    }
+    
+}
+
+
+@media screen and (max-width:400px){
+   
+
+    .fbtm p{
+        font-size: 12px;
+    }
+   
+    
+}
+
+@media screen and (max-width:380px){
+   
+
+    .fbtm p{
+        font-size: 10px;
+    }
+   
+    
+}

@@ -1,0 +1,119 @@
+.latest_card_box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.heading1{
+    font-size: 30px;
+    padding: 10px 10vmax;
+    color: #1D4776;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lnewsleft{
+    width: 30%;
+}
+
+.lnewsleft .title p{
+font-size: 1.2vmax;
+}
+.lnewsmid{
+    width: 30%;
+}
+
+.lnewsmid .title p{
+font-size: 1.2vmax;
+}
+
+.lnewsright{
+    width: 30%;
+}
+
+.lnewsright .title p{
+font-size: 1.2vmax;
+}
+.card_img1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.card_img1 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.latestbutton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kop{
+    background-color: #1D4776;
+    color: white;
+    border-radius:0px;
+    font-size: 1.2vmax;
+}
+.viewbtn{
+    padding:10px 25px
+}
+
+
+@media screen and (max-width:768px){
+    .latest_card_box{
+        flex-direction: column;
+    }
+    .lnewsleft{
+        width: 100%;
+    }
+    .lnewsmid{
+        width: 100%;
+    }
+
+    .lnewsright{
+        width: 100%;
+    }
+    .lnewsleft .title p{
+        font-size: 15px;
+        }
+        .lnewsright .title p{
+            font-size: 15px;
+            }
+
+            .lnewsmid .title p{
+                font-size: 15px;
+                }
+                .kop{
+                    font-size: 15px;
+                }
+                .heading1{
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .ak{
+                    text-align: center;
+
+                }
+
+                
+}
+
+@media screen and (max-width:500px){
+
+    .viewbtn{
+        padding:8px 15px;
+        font-size: 13px;
+
+    }
+}
+
+
+
