@@ -6,7 +6,7 @@ const Facilities = () => {
   return (
     <>
       <div className="container-fluid p-0">
-        <BannerSection />
+        {/* <BannerSection /> */}
 
         <div className="container liscontainer">
 
