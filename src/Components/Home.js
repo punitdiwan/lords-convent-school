@@ -33,7 +33,7 @@ const BannerSection = () => {
             <div className="carousel-item active">
               <img
                 className="d-block slideimage"
-                src="./images1/lords convent slider.jpg"
+                src="./images1/lords-slider.jpeg"
                 alt="First slide"
               />
               {  /*   <div className="carousel-caption d-none d-md-block">
@@ -52,7 +52,7 @@ const BannerSection = () => {
             <div className="carousel-item">
               <img
                 className="d-block slideimage"
-                src="./images1/lords convent slider.jpg"
+                src="./images1/lords-slider.jpeg"
                 alt="Second slide"
               />
               {  /*   <div className="carousel-caption d-none d-md-block">
@@ -70,7 +70,7 @@ const BannerSection = () => {
             <div className="carousel-item">
               <img
                 className="d-block slideimage"
-                src="./images1/lords convent slider.jpg"
+                src="./images1/lords-slider.jpeg"
                 alt="Third slide"
               />
               {  /*   <div className="carousel-caption d-none d-md-block">
@@ -89,7 +89,7 @@ const BannerSection = () => {
             <div className="carousel-item">
               <img
                 className="d-block slideimage"
-                src="./images1/lords convent slider.jpg"
+                src="./images1/lords-slider.jpeg"
                 alt="Fourt slide"
               />
               {  /*      <div className="carousel-caption d-none d-md-block">
@@ -107,7 +107,7 @@ const BannerSection = () => {
             <div className="carousel-item">
               <img
                 className="d-block slideimage"
-                src="./images1/lords convent slider.jpg"
+                src="./images1/lords-slider.jpeg"
                 alt="Fifth slide"
               />
               {  /*    <div className="carousel-caption d-none d-md-block">
