@@ -15,7 +15,6 @@ import Updates from './Components/Updates';
 import BoardD from './Components/BoardD';
 import Principal from './Components/Principal';
 import ScrollToTop from './Components/ScrollToTop';
-import AdmissionBanner from './Components/AdmissionBanner';
 
 function App() {
   return (
@@ -26,7 +25,6 @@ function App() {
           <Updates />
           <Navbar />
           <NextNavbar />
-          <AdmissionBanner />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
