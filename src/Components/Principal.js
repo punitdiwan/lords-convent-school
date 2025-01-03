@@ -24,13 +24,18 @@ const Principal = () => {
                   <b>Principal Message -</b>
                 </h5>
                 <p>
-                  Warm Greeting from Lords Convent school family, we firmly believed
-                  that school education lays the foundation for the future of
-                  the students and ensure a stable. According to the words of Swami Vivekanand "Arise, awake
-                  and stop not till the goal is reached" echo in my mind. The
-                  School activities are planned and prepared meticulously,
-                  Our mission is to produce educated smart and confident
-                  citizens of India.
+                  Dear Students, Parents, Teachers, and Members of the Lord's Convent School Community,
+
+                  <br></br>
+                  It is with immense joy and gratitude that I welcome you to Lord's Convent School for another year of learning,
+                  growth, and achievement. As principal, I am privileged to be part of a community that is
+                  united in its commitment to excellence in education, character development, and holistic
+                  growth.
+                  <br></br>
+                  At Lord's Convent School, we believe that every child is unique and has the potential
+                  to achieve greatness. Our mission is not just to impart knowledge but to inspire a love
+                  for learning, foster creativity, and instill values that will guide our students throughout
+                  their lives.
                 </p>
               </div>
             </div>
@@ -39,9 +44,9 @@ const Principal = () => {
             <p>
               <b>Dear Parents, Students, and Visitors:</b>
             </p>
-            <p>
+            {/*    <p>
               <i>Lords Convent School</i>
-            </p>
+            </p> */}
             <p>
               Welcome to the Lords Convent School. As we embark into a
               new journey of growth and learning, we will

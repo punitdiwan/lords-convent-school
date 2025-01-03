@@ -15,37 +15,38 @@ import Updates from './Components/Updates';
 import BoardD from './Components/BoardD';
 import Principal from './Components/Principal';
 import ScrollToTop from './Components/ScrollToTop';
-
+import AdmissionBanner from './Components/AdmissionBanner';
 
 function App() {
   return (
     <>
-    <div className='container-fluid mainbgcch p-0'>
-      <BrowserRouter>
-      <ScrollToTop/>
-         <Updates/>
-      <Navbar/>
-      <NextNavbar/>
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={ <Gallery/>} />
-          <Route path="/facilities" element={ <Facilities/>} />
-          <Route path="/contactus" element={ <ContactUs/>} />
-          <Route path="/academicprocedure" element={ <AcademicPRocedure/>} />
-          <Route path="/ourschool" element={ <OurSchool/>} />
-          <Route path="/boarddirector" element={ <BoardD/>} />
-          <Route path="/principal" element={ <Principal/>} />
+      <div className='container-fluid mainbgcch p-0'>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Updates />
+          <Navbar />
+          <NextNavbar />
+          <AdmissionBanner />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/academicprocedure" element={<AcademicPRocedure />} />
+            <Route path="/ourschool" element={<OurSchool />} />
+            <Route path="/boarddirector" element={<BoardD />} />
+            <Route path="/principal" element={<Principal />} />
 
 
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
 
 
-    </div>
-    
-    
-    
+      </div>
+
+
+
     </>
   );
 }
