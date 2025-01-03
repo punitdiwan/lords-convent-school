@@ -1,25 +1,13 @@
+/* Default styles for .slideimage */
 .slideimage {
     width: 100%;
-    height: 400px;
+    height: 300px;
+    /* Decreased height for the images */
 }
 
-
-/* .carousel-item {
-    height: 350px;
-} */
+/* Adjusted carousel caption styles */
 .carousel-caption {
     color: #fafafa;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: rgb(216, 207, 207);
-    margin: 0px .5vmax;
-}
-
-.carousel-caption {
     width: 100vw;
     position: absolute;
     left: 0;
@@ -36,49 +24,106 @@
     width: 70vw;
 }
 
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(216, 207, 207);
+    margin: 0px .5vmax;
+}
+
+/* Adjust carousel control buttons */
 .jj {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    padding: 2vmx;
-    /* border: 1px solid white; */
-
+    padding: 2vmax;
 }
 
+/* Container for carousel images */
 .jaimataran {
-    height: 500px;
+    height: 350px;
+    /* Decreased height for the carousel container */
 }
 
-@media screen and (max-width:768px) {
+/* Ensure the carousel takes full width and height */
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Ensure images inside the carousel scale correctly */
+.carousel-item img {
+    object-fit: contain;
+    /* Ensures the entire image is visible */
+    width: 100%;
+    /* Makes image take full width of its container */
+    height: 100%;
+    /* Ensures image fills the full height of the container */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Adjust the carousel control buttons for smaller screens */
     .jj {
         height: 20px;
         width: 20px;
-
     }
 
-    .slideimage {
-        width: 100%;
-        height: 300px;
-    }
-
-    .jaimataran {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .jj {
-        height: 20px;
-        width: 20px;
-
-    }
-
+    /* Adjust the height of the images on small screens */
     .slideimage {
         width: 100%;
         height: 250px;
+        /* Decreased height for medium screens */
     }
 
+    /* Adjust carousel container height */
     .jaimataran {
-        height: 350px;
+        height: 300px;
+        /* Reduced height for smaller screens */
+    }
+
+    /* Adjust text size in carousel captions for smaller screens */
+    .carousel-caption h1 {
+        font-size: 4vmax;
+    }
+
+    .carousel-caption p {
+        font-size: 2vmax;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Further adjust the carousel control buttons for even smaller screens */
+    .jj {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* Adjust the height of images on very small screens */
+    .slideimage {
+        width: 100%;
+        height: 200px;
+        /* Further reduced height for very small screens */
+    }
+
+    /* Adjust carousel container height */
+    .jaimataran {
+        height: 250px;
+        /* Decreased height for very small screens */
+    }
+
+    /* Adjust caption sizes for small screens */
+    .carousel-caption h1 {
+        font-size: 5vmax;
+    }
+
+    .carousel-caption p {
+        font-size: 2.5vmax;
     }
 }
