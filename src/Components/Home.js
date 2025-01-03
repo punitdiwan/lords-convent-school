@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./css/BannerS.css";
 import "./css/LatestNews.css";
 import "./css/Admission.css";
@@ -7,149 +7,68 @@ import { NavLink } from "react-router-dom";
 
 
 const BannerSection = () => {
+  const [slides, setSlides] = useState([]);
+  const [selectedSlide, setSelectedSlide] = useState(0);
+  const slideIntervalDuration = 4000; // 5 seconds
+
+  useEffect(() => {
+    // Fetch the slides data
+    fetch('https://cms.maitretech.com/lords-convent-school/items/slider?fields=*.*.*')
+      .then(response => response.json())
+      .then(data => {
+        // Assuming the slides array is in the data property
+        const apiSlides = data.data || [];
+        setSlides(apiSlides);
+      })
+      .catch(error => console.error('Error:', error));
+
+    // Set an interval to automatically change the slide
+    const slideInterval = setInterval(() => {
+      setSelectedSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, slideIntervalDuration);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(slideInterval);
+  }, [slides.length]);
   return (
     <>
 
 
-
       <div className="container-fluid p-0">
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-ride="carousel"
-        >
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           <ol className="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              className="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            {slides.map((_, index) => (
+              <li key={index} data-target="#carouselExampleIndicators" data-slide-to={index} className={index === selectedSlide ? 'active' : ''}></li>
+            ))}
           </ol>
-          <div className="carousel-inner" role="listbox">
-            <div className="carousel-item active">
-              <img
-                className="d-block slideimage"
-                src="./images1/lords-slider.jpeg"
-                alt="First slide"
-              />
-              {  /*   <div className="carousel-caption d-none d-md-block">
-                <h1>
-                  <b>Lords Convent School</b>
-                </h1>
-                <p>
-                  <b>
-                    Embracing state-of-the-art technology in our classrooms
-                    allows Lords Convent School to facilitate 21st
-                    century teaching and learning for its teachers and students.
-                  </b>
-                </p>
-              </div> */ }
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block slideimage"
-                src="./images1/lords-slider.jpeg"
-                alt="Second slide"
-              />
-              {  /*   <div className="carousel-caption d-none d-md-block">
-                <h1 style={{ color: "black" }}>
-                  <b>Dynamic Educators</b>
-                </h1>
-                <p>
-                  <b style={{ color: "#262624" }}>
-                    Lords Convent School to facilitate 21st century
-                    teaching and learning for its teachers and students.
-                  </b>
-                </p>
-              </div> */ }
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block slideimage"
-                src="./images1/lords-slider.jpeg"
-                alt="Third slide"
-              />
-              {  /*   <div className="carousel-caption d-none d-md-block">
-                <h1>
-                  <b>Hands-on learning</b>
-                </h1>
-                <p>
-                  <b>
-                    Since its inception, Lords Convent School has consistently grown year after
-                    year and has gained a reputation of becoming a leading
-                    educational institute.
-                  </b>
-                </p>
-              </div> */ }
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block slideimage"
-                src="./images1/lords-slider.jpeg"
-                alt="Fourt slide"
-              />
-              {  /*      <div className="carousel-caption d-none d-md-block">
-                <h1>
-                  <b>Safe and Caring Environment</b>
-                </h1>
-                <p>
-                  <b>
-                    Feeling safe and cared for is what makes our school
-                    community a complete family!
-                  </b>
-                </p>
-              </div> */ }
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block slideimage"
-                src="./images1/lords-slider.jpeg"
-                alt="Fifth slide"
-              />
-              {  /*    <div className="carousel-caption d-none d-md-block">
-                <h1>
-                  <b>21st Century Education</b>
-                </h1>
-                <p>
-                  <b>
-                    Embracing state-of-the-art technology in our classrooms
-                    allows Lords Convent School to facilitate 21st
-                    century teaching and learning for its teachers and students.
-                  </b>
-                </p>
-              </div> */ }
-            </div>
+
+          <div className="carousel-inner jaimataran">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === selectedSlide ? 'active' : ''}`}
+                data-bs-interval="5000"
+              >
+                <img
+                  src={slide.image.data.full_url?.replace('http://', 'https://')}
+                  className="d-block w-100"
+                  alt={`Slide ${index}`}
+                />
+              </div>
+            ))}
           </div>
-          <a
-            className="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon jj"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only"></span>
+
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon jj" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
           </a>
-          <a
-            className="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon jj"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only"></span>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon jj" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
           </a>
         </div>
       </div>
+
 
       {/* Latest New Section---------------------- */}
 
@@ -201,7 +120,7 @@ const BannerSection = () => {
 
         <div className="latestbutton p-2">
           <NavLink className="btn btn-lg kop viewbtn" to="/facilities">
-            View all New
+            View all Newz
           </NavLink>
         </div>
       </div>

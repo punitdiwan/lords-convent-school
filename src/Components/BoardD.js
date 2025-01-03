@@ -22,16 +22,21 @@ const BoardD = () => {
 
               <div className="director_mess">
                 <h5>
-                  <b>Director Message -</b>
+                  <b>Message from the Board of Directors                  </b>
                 </h5>
                 <p>
-                  Dear Parent & Students, It gives me great pleasure to welcome
-                  you to Lords Convent , We follow a rigorous programme that is based
-                  upon the best educational practices, highly progressive and
-                  recognized world-wide; and one that creates conditions for
-                  students to maximize their potential at an internationally
-                  competitive level. highly qualified and well-trained teachers.
-                  I welcome you to be a part of Lords Convent family!
+                  Dear Students, Parents, and Members of the School Community, <br></br>
+
+                  As the Board of Director, it is both an honor and a privilege to serve and support the vibrant
+                  and dynamic community of Lord's Convent School. Our mission has always been to foster an
+                  environment where academic excellence, character development, and lifelong learning are
+                  nurtured and celebrated.
+
+                  <br></br>
+                  We are committed to providing our students with the tools and opportunities they need to
+                  thrive in an ever-changing world. Through collaboration with educators, parents, and
+                  the broader community, we ensure that our school remains a beacon of knowledge, inclusivity,
+                  and innovation.
                 </p>
               </div>
 
@@ -107,7 +112,7 @@ const BoardD = () => {
             <NobleSidebar />
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };

@@ -45,6 +45,10 @@
 
 }
 
+.jaimataran {
+    height: 500px;
+}
+
 @media screen and (max-width:768px) {
     .jj {
         height: 20px;
@@ -55,6 +59,10 @@
     .slideimage {
         width: 100%;
         height: 300px;
+    }
+
+    .jaimataran {
+        height: 450px;
     }
 }
 
@@ -68,5 +76,9 @@
     .slideimage {
         width: 100%;
         height: 250px;
+    }
+
+    .jaimataran {
+        height: 350px;
     }
 }
