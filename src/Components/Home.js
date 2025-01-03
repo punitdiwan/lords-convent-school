@@ -4,6 +4,8 @@ import "./css/LatestNews.css";
 import "./css/Admission.css";
 import "./css/HlastSection.css";
 import { NavLink } from "react-router-dom";
+import AdmissionBanner from '../Components/AdmissionBanner';
+
 
 
 const BannerSection = () => {
@@ -32,6 +34,8 @@ const BannerSection = () => {
   }, [slides.length]);
   return (
     <>
+
+      <AdmissionBanner />
 
 
       <div className="container-fluid p-0">
