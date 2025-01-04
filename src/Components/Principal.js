@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./css/board.css";
 import NobleSidebar from "./NobleSidebar";
 
 const Principal = () => {
@@ -40,8 +41,11 @@ const Principal = () => {
 
   return (
     <div className="container-fluid p-0">
-      <div className="container-fluid latest_card_box_ad p-5">
-        <div className="ourschoolboardeft px-0 text-left">
+      <div className="container-fluid d-flex latest_card_box_ad pt-0">
+        <div className="ourschoolboardeft px-3 text-left">
+          <h4 className="kalurr mt-3" style={{ color: "black", fontWeight: "bold" }}>
+            Principle
+          </h4>
           <div className="princd">
             <div className="photos">
               {principleData?.principle_image?.data?.full_url && (

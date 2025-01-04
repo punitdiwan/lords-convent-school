@@ -14,7 +14,7 @@
 
 .princd {
     width: 100%;
-    height: 300px;
+    height: 340px;
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: auto;
@@ -171,7 +171,7 @@
     }
 
     .princd {
-        height: 400px;
+        height: 470px;
         width: 100%;
 
 
@@ -207,7 +207,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 450px;
+        height: 470px;
         width: 100%;
 
     }
@@ -245,7 +245,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 420px;
+        height: 470px;
         width: 100%;
 
 
@@ -280,7 +280,7 @@
 
     .princd {
         margin-top: 0px;
-        height: 400px;
+        height: 450px;
         width: 100%;
 
 
@@ -315,7 +315,7 @@
 
 @media screen and (max-width:450px) {
     .princd {
-        height: 350px;
+        height: 390px;
         width: 100%;
 
 
@@ -349,7 +349,7 @@
 
 @media screen and (max-width:400px) {
     .princd {
-        height: 340px;
+        height: 399px;
         padding: 10px 10px;
         width: 100%;
 
@@ -385,7 +385,7 @@
 
 @media screen and (max-width:315px) {
     .princd {
-        height: 370px;
+        height: 390px;
         padding: 10px 10px;
         width: 100%;
 
