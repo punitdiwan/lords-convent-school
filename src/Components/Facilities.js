@@ -73,7 +73,7 @@ const Facilities = () => {
             {/* hygiene washroom */}
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/13.jpeg" alt="" />
+                <img src="./images1/bus1.webp" alt="" />
               </div>
               <div className="facontent">
                 <div className="factitle">Transportation Services</div>
@@ -99,7 +99,7 @@ const Facilities = () => {
 
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/bus1.webp" alt="" />
+                <img src="./images1/12.jpeg" alt="" />
               </div>
               <div className="facontent">
                 <div className="factitle">Sports facilities</div>
