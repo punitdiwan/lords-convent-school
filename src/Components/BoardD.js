@@ -1,47 +1,82 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./css/board.css";
 import NobleSidebar from "./NobleSidebar";
 
 const BoardD = () => {
+
+  const [directorData, setDirectorData] = useState(null);
+  console.log("directorData", directorData);
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://cms.maitretech.com/lords-convent-school/items/director_message?fields=*.*");
+        const data = await response.json();
+        console.log("datadata", data);
+
+        const directorInfo = {
+          directorName: data.data[0]?.director_name,
+          directorMessage: data.data[0]?.director_message,
+          fullUrl: data.data[0]?.director_image?.data?.full_url,
+        };
+        setDirectorData(directorInfo);
+      } catch (error) {
+        console.error('Error fetching director message:', error);
+        setError('Failed to load data. Please try again later.');
+      } finally {
+        setIsLoading(false); // Ensure that loading state is disabled after fetch attempt
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures useEffect runs once on component mount
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
   return (
     <>
       <div className="container-fluid p-0">
-
-
         <div className="container-fluid d-flex latest_card_box_ad pt-0">
           <div className="ourschoolboardeft px-3 text-left">
-            <h4 className="kalurr mt-3" style={{ color: "black", fontWeight: "bold" }}>Board Of Director</h4>
+            <h4 className="kalurr mt-3" style={{ color: "black", fontWeight: "bold" }}>
+              Board Of Director
+            </h4>
 
             <div className="princd">
               <div className="photos">
-                <img src="./images1/dire ctor.webp" alt="" />
+                {directorData?.fullUrl && (
+                  <img
+                    src={directorData.fullUrl.replace("http://", "https://")}
+                    alt={`Photo of ${directorData.directorName}`}
+                    className="director-image" // Add a class for image styling
+                  />
+                )}
                 <div className="phname">
-                  <b>Director</b> - Director name
+                  <b>Director</b> {directorData?.directorName || "N/A"}
                 </div>
               </div>
 
               <div className="director_mess">
                 <h5>
-                  <b>Message from the Board of Directors                  </b>
+                  <b>Message from the Board of Directors</b>
                 </h5>
-                <p>
-                  Dear Students, Parents, and Members of the School Community, <br></br>
-
-                  As the Board of Director, it is both an honor and a privilege to serve and support the vibrant
-                  and dynamic community of Lord's Convent School. Our mission has always been to foster an
-                  environment where academic excellence, character development, and lifelong learning are
-                  nurtured and celebrated.
-
-                  <br></br>
-                  We are committed to providing our students with the tools and opportunities they need to
-                  thrive in an ever-changing world. Through collaboration with educators, parents, and
-                  the broader community, we ensure that our school remains a beacon of knowledge, inclusivity,
-                  and innovation.
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: directorData?.directorMessage || "No message available."
+                  }}
+                />
               </div>
-
-
             </div>
+
             <p>
               <b>
                 The Board of Directors is the main governing body of the
@@ -84,26 +119,14 @@ const BoardD = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Director name</td>
+                  <td>{directorData?.directorName || "Director name"}</td>
                   <td>Director</td>
                 </tr>
                 <tr>
                   <td>Principal name</td>
                   <td>Principal</td>
                 </tr>
-
-                {/* <tr>
-                  <td>Mr. John Doe</td>
-                  <td>Director (LMM Representative)</td>
-                </tr>
-                <tr>
-                  <td>Mr. John Doe</td>
-                  <td> Director (Community Representative)</td>
-                </tr>
-                <tr>
-                  <td>Mr. John Doe</td>
-                  <td>Director (Community Representative)</td>
-                </tr> */}
+                {/* You can add more rows here for additional board members */}
               </tbody>
             </table>
           </div>
@@ -112,7 +135,7 @@ const BoardD = () => {
             <NobleSidebar />
           </div>
         </div>
-      </div >
+      </div>
     </>
   );
 };
