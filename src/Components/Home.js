@@ -82,20 +82,18 @@ const BannerSection = () => {
         <div className="container-fluid px-5 d-flex latest_card_box">
           <div className="lnewsleft p-3">
             <div className="card_img1">
-              <img src="./images1/g1.webp" alt="" />
+              <img src="./images1/10.jpeg" alt="" />
             </div>
             <div className="title">
-              <h3 className="my-3 ak">Swimming Pool</h3>
+              <h3 className="my-3 ak">Computer Lab</h3>
               <p>
-                A school swimming pool offers an important added value to an
-                educational centre, as it promotes the values of sport among
-                pupils. More information here....
+                A computer lab is a vital part of school facilities, providing students with access to technology and digital learning resources. The lab supports a wide range of educational activities.
               </p>
             </div>
           </div>
           <div className="lnewsmid p-3">
             <div className="card_img1">
-              <img src="./images1/slide3_11zon.webp" alt="" />
+              <img src="./images1/2.jpeg" alt="" />
             </div>
             <div className="title">
               <h3 className="my-3 ak">Skilled Staff</h3>
@@ -108,7 +106,7 @@ const BannerSection = () => {
           </div>
           <div className="lnewsright p-3">
             <div className="card_img1">
-              <img src="./images1/g3.webp" alt="" />
+              <img src="./images1/11.jpeg" alt="" />
             </div>
             <div className="title">
               <h3 className="my-3 ak">Sports</h3>
@@ -124,7 +122,7 @@ const BannerSection = () => {
 
         <div className="latestbutton p-2">
           <NavLink className="btn btn-lg kop viewbtn" to="/facilities">
-            View all Newz
+            View all
           </NavLink>
         </div>
       </div>
