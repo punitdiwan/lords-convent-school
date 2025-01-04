@@ -90,6 +90,7 @@ const AdmissionBanner = () => {
                             maxWidth: '270px', // Adjusted max width for larger images
                             padding: '0', // No padding for simplicity
                             textAlign: 'center',
+                            height: '500px'
                         }}
                     >
                         {/* Close button */}
