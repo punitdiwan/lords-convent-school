@@ -16,11 +16,11 @@ const Facilities = () => {
             {/* swimming */}
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/swim.webp" alt="" />
+                <img src="./images1/10.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Swimming Pool</div>
-                <p>A school swimming pool offers an important added value to an educational centre, as it promotes the values of sport among pupils. More information here.</p>
+                <div className="factitle">Computer Lab</div>
+                <p>A computer lab is a vital part of school facilities, providing students with access to technology and digital learning resources. Equipped with computers, printers, and internet connectivity, the lab supports a wide range of educational activities, from research and assignments to coding and multimedia projects. It helps students develop essential digital literacy skills, preparing them for future academic and professional challenges.</p>
               </div>
             </div>
 
@@ -30,11 +30,11 @@ const Facilities = () => {
 
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/slide3_11zon.webp" alt="" />
+                <img src="./images1/13.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Skilled Staff</div>
-                <p>Skilled Staff is here to teach or guide for your bright carrier and and provides Handson in our School.Teachers play a key role in identifying and supporting students who are at risk of dropping out, especially students from vulnerable populations, such as girls ...</p>
+                <div className="factitle">Digital Smart Class</div>
+                <p>A Digital Smart Class is an advanced learning environment equipped with interactive technologies like smartboards, projectors, tablets, and online resources to enhance the teaching and learning experience. It allows teachers to present lessons in dynamic ways, integrating multimedia, simulations, and real-time information to engage students more effectively. Smart classes promote interactive learning, making complex concepts easier to understand through visuals and interactivity. This modern approach helps develop critical thinking, collaboration, and digital literacy, preparing students for a tech-driven future.</p>
               </div>
             </div>
 
@@ -44,11 +44,11 @@ const Facilities = () => {
             {/* sports */}
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/g2.webp" alt="" />
+                <img src="./images1/8.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Sports</div>
-                <p>Extensive and well maintained play fields of football and cricket and courts for volleyball, basketball, kabaddl, throwball and badminton me available to students. Indoor facilities of chess, caroms, table tennis etc. are also available.</p>
+                <div className="factitle">Shooting</div>
+                <p>Shooting facilities in schools provide students with a safe and structured environment to practice precision and focus through sports like archery or air rifle shooting. These specialized areas are typically equipped with targets, safety gear, and trained instructors to ensure proper technique and safety protocols. Shooting sports in schools help develop concentration, hand-eye coordination, discipline, and mental resilience.</p>
               </div>
             </div>
 
@@ -59,11 +59,11 @@ const Facilities = () => {
 
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/DSC_2126.JPG" alt="" />
+                <img src="./images1/1.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Nice Infrastructure</div>
-                <p>The fact is that a good school infrastructure, with renewed spaces, makes it possible for children and youths that live in remote areas to study .A good school infrastructure makes it a good place for the children to study, which is important as the student spends maximum time in school.</p>
+                <div className="factitle">Safety and Security</div>
+                <p>Safety and security are crucial elements of school facilities, ensuring that students, staff, and visitors are protected in a safe learning environment. This includes measures such as secure entry points, surveillance cameras, emergency response systems, and well-trained security personnel. Schools also implement protocols for fire drills, lockdowns, and medical emergencies to prepare for various situations.</p>
               </div>
             </div>
 
@@ -73,11 +73,11 @@ const Facilities = () => {
             {/* hygiene washroom */}
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/a2.jpeg" alt="" />
+                <img src="./images1/13.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Medical Camp</div>
-                <p>The medical camps are conducted by qualified doctors and nurses either employed by Hand in Hand or from reputed hospitals. Patients with mild disorders are prescribed medication during the camp and those with serious disorders are referred to the nearest primary healthcare centre.</p>
+                <div className="factitle">Transportation Services</div>
+                <p>The school provides transport facility to the students through Buses & Magic for transporting the students from different localities to the school and vice-versa. Students can avail the Transport facility by putting up an application. All the buses have trained driver’s and conductor’s. The school follows all the rules and regulations of M.P. Government for the buses.</p>
               </div>
             </div>
 
@@ -86,11 +86,12 @@ const Facilities = () => {
 
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/goda.jpeg" alt="" />
+                <img src="./images1/12.jpeg" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Good Academic</div>
-                <p>We provide our student with good encyclopedia to reduce their encumbrance regarding any subject academically or globally. A well equipped laboratories of physics, chemistry, biology and computers for practical learning .We teach students by smart classes for active participation and deep knowledge. A good psychiatrist and counselor for students and Parents is available during school timings.</p>
+                <div className="factitle">Outdoor and Indoor Playground</div>
+                <p>
+                  Outdoor and indoor playgrounds are essential components of school facilities, providing students with opportunities for physical activity, social interaction, and creative play. Outdoor playgrounds typically include equipment like swings, slides, and climbing structures, encouraging children to engage in active, imaginative play while developing motor skills and teamwork.</p>
               </div>
             </div>
 
@@ -101,24 +102,24 @@ const Facilities = () => {
                 <img src="./images1/bus1.webp" alt="" />
               </div>
               <div className="facontent">
-                <div className="factitle">Transport Facility</div>
-                <p>The school provides transport facility to the students through Buses & Magic for transporting the students from different localities to the school and vice-versa. Students can avail the Transport facility by putting up an application. All the buses have trained driver’s and conductor’s. The school follows all the rules and regulations of M.P. Government for the buses.</p>
+                <div className="factitle">Sports facilities</div>
+                <p>Extensive and well maintained play fields of football and cricket and courts for volleyball, basketball, kabaddl, throwball and badminton me available to students. Indoor facilities of chess, caroms, table tennis etc. are also available.</p>
               </div>
             </div>
 
 
 
-            {/* smart education fac */}
+            {/* smart education fac 
 
             <div className="facilitCard">
               <div className="facilimages">
-                <img src="./images1/a3.jpeg" alt="" />
+                <img src="./images1/3.jpeg" alt="" />
               </div>
               <div className="facontent">
                 <div className="factitle">Smart Auditorium Hall</div>
                 <p>Lords Convent School have a smart Auditorium hall for meetings or cleberating functions or festival in the school . 60+ students and faculties can appear in this Hall. </p>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
