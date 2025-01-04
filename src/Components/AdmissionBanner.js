@@ -129,8 +129,10 @@ const AdmissionBanner = () => {
                             style={{
                                 width: '100%',
                                 maxHeight: '80vh', // Limit height for responsiveness
-                                objectFit: 'cover', // Ensures image scales well
+                                objectFit: 'contain', // Ensures image scales well
                                 borderRadius: '8px',
+                                overflow: 'hidden',
+
                             }}
                         />
                     </div>
