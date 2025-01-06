@@ -47,7 +47,7 @@ const BannerSection = () => {
   return (
     <>
       <div className="container-fluid p-0">
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
             {slides.map((_, index) => (
               <li
@@ -58,7 +58,6 @@ const BannerSection = () => {
               ></li>
             ))}
           </ol>
-
           <div className="carousel-inner" role="listbox">
             {slides.map((slide, index) => (
               <div
@@ -74,13 +73,10 @@ const BannerSection = () => {
               </div>
             ))}
           </div>
-
-          {/* Optional Manual Navigation (if you still want prev/next buttons) */}
           <a
             className="carousel-control-prev"
             href="#carouselExampleIndicators"
-            role="button"
-            data-bs-slide="prev"
+            role="button" data-slide="prev"
             onClick={() => handleManualChange("prev")}
           >
             <span className="carousel-control-prev-icon jj" aria-hidden="true"></span>
@@ -90,7 +86,7 @@ const BannerSection = () => {
             className="carousel-control-next"
             href="#carouselExampleIndicators"
             role="button"
-            data-bs-slide="next"
+            data-slide="next"
             onClick={() => handleManualChange("next")}
           >
             <span className="carousel-control-next-icon jj" aria-hidden="true"></span>
