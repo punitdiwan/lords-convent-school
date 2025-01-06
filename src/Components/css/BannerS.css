@@ -83,6 +83,15 @@
         max-height: 400px;
         /* Keep a max-height for smaller screens */
     }
+
+    .carousel-inner {
+        width: 90%;
+        /* Ensure the inner container takes full width */
+        height: 50vh;
+        /* Let the height adjust based on image aspect ratio */
+        overflow: hidden;
+        /* Hide any overflow content */
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -96,5 +105,14 @@
         height: 40vh;
         /* 40% of the viewport height for very small screens */
         max-height: 300px;
+    }
+
+    .carousel-inner {
+        width: 90%;
+        /* Ensure the inner container takes full width */
+        height: 40vh;
+        /* Let the height adjust based on image aspect ratio */
+        overflow: hidden;
+        /* Hide any overflow content */
     }
 }
