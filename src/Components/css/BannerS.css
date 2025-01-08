@@ -21,7 +21,7 @@
     position: relative;
     width: 100%;
     /* Full width */
-    height: 90vh;
+    height: 85vh;
     /* Height as a percentage of the viewport height */
     max-height: 900px;
     /* Maximum height to avoid getting too large */
@@ -29,7 +29,7 @@
 
 /* Ensure the image scales correctly and is fully visible */
 .carousel-item img {
-    object-fit: contain;
+    object-fit: fill;
     /* Ensure the image is fully visible without cropping */
     width: 100%;
     /* Full width of the container */
