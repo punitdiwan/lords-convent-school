@@ -17,15 +17,16 @@ const Navbar = () => {
         </div>
         <div className="navright">
           <div className="socialmedia">
-            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
+            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "#111A5C" }}> <i className="ri-facebook-fill"></i></a>
 
-            <i className="ri-linkedin-box-fill"></i>
-            <i className="ri-youtube-line"></i>
+            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "#111A5C" }}>  <i className="ri-instagram-fill"></i> </a>
+            <a href="" target="_blank" style={{ textDecoration: "none", color: "#111A5C" }}>  <i className="ri-youtube-fill"></i> </a>
+
           </div>
-          <div className="seacrch">
+          {   /*   <div className="seacrch">
             <input className='aa' type="search" />
             <div className="btn" style={{ backgroundColor: "#F8D34D" }}>Search</div>
-          </div>
+          </div> */}
 
 
         </div>

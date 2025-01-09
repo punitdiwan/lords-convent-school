@@ -21,7 +21,7 @@ const NobleSidebar = () => {
             borderRadius: "2px",
           }}
         >
-          <a className="text-center hogbtn" style={{ color: "white", }}>Lords Convent SCHOOL</a>
+          <a className="text-center hogbtn" style={{ color: "white", }}>Lords Convent School</a>
         </div>
         {/* <button className="nobaa mt-5">Lords Convent School</button> */}
         <div className="nobaa nobaaa">

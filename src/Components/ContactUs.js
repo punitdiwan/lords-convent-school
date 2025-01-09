@@ -83,8 +83,8 @@ const ContactUs = () => {
             <div className="titlecontact">
               <h4 className="ssss">School</h4>
               <hr />
-              <p className="linkwrap"><b className="bbb">Phone:</b> <a className="linkwrap mnc" href="tel:+91 92022 01174">+91 92022 01174</a> <a className="linkwrap mnc" href="tel:+91 92022 01174">+91 92022 01174</a></p>
-              <p className="linkwrap"><b className="bbb">Fax:</b> <a className="linkwrap mnc" href="tel:92022 01174">+91 92022 01174</a> </p>
+              <p className="linkwrap"><b className="bbb">Phone:</b> <a className="linkwrap mnc" href="tel:+91 87704 07585">+91 87704 07585</a> , <a className="linkwrap mnc" href="tel:+91 89627 56297">+91 89627 56297</a></p>
+              <p className="linkwrap"><b className="bbb">Address:</b> <a className="linkwrap mnc" >Near vijay nagar Vallabh nagar lalghati bhopal, (M.P) 462030</a> </p>
               <p className="linkwrap"><b className="bbb">Email:</b> <a className="linkwrap mnc" href="mailto:lords_school@rediffmail.com">lords_school@rediffmail.com</a> </p>
               {/* <p className="linkwrap"><b className="bbb">Website:</b> <a className="linkwrap mnc" href="">
             www.npsbhopal.com</a> </p> */}

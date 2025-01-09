@@ -6,7 +6,7 @@
 }
 
 .navmain {
-    background-color: #1D4776;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,7 +34,7 @@
 }
 
 .navmid {
-    color: white;
+    color: "#111A5C";
     text-align: center;
     width: 65%;
 }
@@ -49,7 +49,7 @@
 }
 
 .socialmedia i {
-    font-size: 2vmax;
+    font-size: 3vmax;
 }
 
 .navright {
@@ -151,7 +151,7 @@
     }
 
     .socialmedia i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .nav-link {
@@ -191,7 +191,7 @@
     }
 
     .socialmedia i {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .navmid p {
@@ -234,7 +234,7 @@
     }
 
     .socialmedia i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .nav-link {
@@ -274,7 +274,7 @@
     }
 
     .socialmedia i {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .navmid p {
