@@ -1,32 +1,49 @@
-import React from "react";
-import { NavLink } from "react-router-dom"
-
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const NobleSidebar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prevState => !prevState);
+  };
+
+  useEffect(() => {
+    console.log("Dropdown state changed: ", isDropdownOpen);
+  }, [isDropdownOpen]);
+
   return (
     <>
-      <div className="rightbad">
-        <div className="searchbox">
-          <input type="search" style={{ border: "1px solid #D1D5DB" }} />
-          <button className="btn btn-lg">
+
+      <div className="rightbad" style={{ position: "relative", padding: "20px", width: "250px" }}>
+        <div className="searchbox" style={{ marginBottom: "20px" }}>
+          <input type="search" style={{ border: "1px solid #D1D5DB", padding: "8px", width: "80%" }} />
+          <button className="btn btn-lg" style={{ background: "#797A7B", color: "#fff", borderRadius: "4px", border: "none" }}>
             <i className="ri-search-line"></i>
           </button>
         </div>
+
+        {/* School Name Section */}
         <div
-          className="btn btn-light nobaa text-center nobaaa1 mt-4 "
+          className="btn btn-light nobaa text-center nobaaa1 mt-4"
           type="button"
           style={{
             border: "1px solid #797A7B",
             color: "white",
             borderRadius: "2px",
+            marginBottom: "20px",
+            fontSize: "15px"
           }}
         >
-          <a className="text-center hogbtn" style={{ color: "white", }}>Lords Convent School</a>
+          <a className="text-center hogbtn" style={{ color: "white" }}>
+            Lords Convent School
+          </a>
         </div>
-        {/* <button className="nobaa mt-5">Lords Convent School</button> */}
+
+        {/* Sidebar Navigation */}
         <div className="nobaa nobaaa">
           <div
-            className="btn btn-light nobaaa1 "
+            className="btn btn-light nobaaa1"
             type="button"
             style={{
               border: "1px solid #797A7B",
@@ -37,40 +54,85 @@ const NobleSidebar = () => {
             <NavLink to="/">HOME</NavLink>
           </div>
 
-          <div
-            className="btn btn-light nobaaa1 dropdown-toggle"
-            type="button"
-            style={{
-              border: "1px solid #797A7B",
-              color: "#797A7B",
-              borderRadius: "2px",
+          {/* ABOUT US Dropdown */}
+          <div className="nobaaa1" style={{ position: "relative" }}>
+            <button
+              className="btn btn-light nobaaa1"
+              type="button"
+              onClick={toggleDropdown}
+              style={{
+                border: "1px solid #797A7B",
+                color: "#797A7B",
+                borderRadius: "2px",
+              }}
+            >
+              ABOUT US
+            </button>
 
-            }}
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-
-            <NavLink to="">ABOUT US</NavLink>
+            {/* Conditional Rendering of Dropdown */}
+            {isDropdownOpen && (
+              <ul
+                style={{
+                  listStyleType: "none",
+                  padding: "10px",
+                  marginTop: "5px",
+                  border: "1px solid #797A7B",
+                  borderRadius: "4px",
+                  backgroundColor: "white",
+                  position: "absolute", // Ensures dropdown is below the button
+                  width: "100%", // Make it the same width as the button
+                  zIndex: 1000, // Ensures it appears above other content
+                }}
+              >
+                <li>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/ourschool"
+                  // style={{
+                  //   textDecoration: "none",
+                  //   color: "#797A7B",
+                  //   display: "block",
+                  //   padding: "8px 10px",
+                  // }}
+                  >
+                    OUR SCHOOL
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/boarddirector"
+                  // style={{
+                  //   textDecoration: "none",
+                  //   color: "#797A7B",
+                  //   display: "block",
+                  //   padding: "8px 10px",
+                  // }}
+                  >
+                    BOARD OF DIRECTOR
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/principal"
+                  // style={{
+                  //   textDecoration: "none",
+                  //   color: "#797A7B",
+                  //   display: "block",
+                  //   padding: "8px 10px",
+                  // }}
+                  >
+                    PRINCIPAL
+                  </NavLink>
+                </li>
+              </ul>
+            )}
           </div>
-          <div
-            className="dropdown-menu p-0"
-            aria-labelledby="dropdownMenuButton"
-          >
-            <a className="dropdown-item" to="/ourschool">
-              OUR SCHOOL
-            </a>
-            <a className="dropdown-item" to="/boarddirector">
-              BOARD OF DIRECTOR
-            </a>
-            <a className="dropdown-item" to="/principal">
-              PRINCIPAL
-            </a>
-          </div>
 
+          {/* Other Sidebar Links */}
           <div
-            className="btn btn-light nobaaa1 "
+            className="btn btn-light nobaaa1"
             type="button"
             style={{
               border: "1px solid #797A7B",
@@ -81,7 +143,7 @@ const NobleSidebar = () => {
             <NavLink to="/academicprocedure">ACADEMIC</NavLink>
           </div>
           <div
-            className="btn btn-light nobaaa1 "
+            className="btn btn-light nobaaa1"
             type="button"
             style={{
               border: "1px solid #797A7B",
@@ -92,7 +154,7 @@ const NobleSidebar = () => {
             <NavLink to="/gallery">GALLERY</NavLink>
           </div>
           <div
-            className="btn btn-light nobaaa1 "
+            className="btn btn-light nobaaa1"
             type="button"
             style={{
               border: "1px solid #797A7B",
@@ -103,9 +165,9 @@ const NobleSidebar = () => {
             <NavLink to="/contactus">CONTACT US</NavLink>
           </div>
 
-
+          {/* Did You Know Section */}
           <div
-            className="btn btn-light nobaa text-center hogbtn nobaaa1 mt-4 "
+            className="btn btn-light nobaa text-center hogbtn nobaaa1 mt-4"
             type="button"
             style={{
               border: "1px solid #797A7B",
@@ -124,13 +186,10 @@ const NobleSidebar = () => {
               borderRadius: "2px",
             }}
           >
-            The Lords Convent School was the first educational institute
-            in
+            The Lords Convent School was the first educational institute in
           </div>
-
         </div>
       </div>
-
       {/*  <div className="ourschoolright p-4"> 
               <div className="seacrch">
                 <input
@@ -248,6 +307,7 @@ const NobleSidebar = () => {
     
      */}
     </>
+
   );
 };
 
