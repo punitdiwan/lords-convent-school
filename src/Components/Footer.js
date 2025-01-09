@@ -34,15 +34,17 @@ const Footer = () => {
         <div className="fbrightt">
           <div className="socialmedia1">
             <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
-            <i className="ri-linkedin-box-fill"></i>
-            <i className="ri-youtube-line"></i>
+            <a href="" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
+            <a href="" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
+
+
           </div>
-          <div className="seacrch">
+          { /* <div className="seacrch">
             <input className='aa' type="search" />
             <div className="btn btn-lg" style={{ backgroundColor: "white" }}>
               <i className="ri-search-line"></i>
             </div>
-          </div>
+          </div> */}
           <div className="copyright mt-2">
             <p id='copyr'>© Made with &nbsp;<i className="ri-heart-fill" style={{ color: "red", fontSize: "20px" }}> </i> <a style={{ color: "white", textDecoration: "none" }} target="_blank" href='https://maitretech.com/'>&nbsp; by Maitretech Solution</a></p>
           </div>

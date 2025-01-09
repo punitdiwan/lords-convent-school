@@ -40,7 +40,7 @@ const AcademicPRocedure = () => {
 
                 Registered parents are invited to visit the campus to understand the Goenkan culture & ethos.
 
-                The mere act of Registration will not constitute a guaranteed admission, which is subject to interaction with Principal, Aptitude test (grade V & above) and the school rule book
+                The  Registration will not constitute a guaranteed admission, which is subject to interaction with Principal, Aptitude test (grade V & above) and the school rule book
               </p>
               <p>
                 <b>Full time:</b>Monday to Saturday from 8: 30 a.m.to 2: 30 p.m.
@@ -72,13 +72,13 @@ const AcademicPRocedure = () => {
                 activity.Educators will consider parent requests related to
                 naps, but will follow child’s cues ultimately.
               </p>
-              <h5>Outdoor Time:</h5>
+              <h5 style={{ fontSize: "22px", fontWeight: "bold" }}>Outdoor Time:</h5>
               <p>
-                The Ministry of Education requires that hildren spend at least
+                The Ministry of Education requires that children spend at least
                 two (2) hours per day outdoors, weather permitting.
               </p>
 
-              <h6>Junior Champions Preschool Handbook</h6>
+              <h6 style={{ fontSize: "22px", fontWeight: "bold" }}>Junior Champions Preschool Handbook</h6>
               <p>
                 Each year, the Junior Champions Preschool publishes a parent
                 handbook which is available to the public.Our handbook

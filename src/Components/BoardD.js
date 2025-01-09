@@ -106,29 +106,11 @@ const BoardD = () => {
                 family!
               </b>
             </p>
-            <p>
+            { /*  <p>
               The Lords Convent Board of Directors currently consists of the following
               members:
-            </p>
-            <table className="table table-bordered">
-              <thead style={{ backgroundColor: "#1D4776", color: "white" }}>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Position</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{directorData?.directorName || "Director name"}</td>
-                  <td>Director</td>
-                </tr>
-                <tr>
-                  <td>Principal name</td>
-                  <td>Principal</td>
-                </tr>
-                {/* You can add more rows here for additional board members */}
-              </tbody>
-            </table>
+            </p> */}
+
           </div>
 
           <div className="ourschoolright p-4">

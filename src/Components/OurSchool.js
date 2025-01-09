@@ -43,7 +43,7 @@ const OurSchool = () => {
                 </em>
               </p>
             </b>
-            <h5>Lords Convent Schoolis proud to offer:</h5>
+            <h5>Lords Convent School is proud to offer:</h5>
             <ul className="px-3">
               <li>Lords Convent School is proud to offer:</li>
               <li>A great Indian environment for growing and learning</li>
