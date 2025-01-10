@@ -43,7 +43,7 @@ const Navbar = () => {
                   height: "48px",
                   borderRadius: "50%",
                   objectFit: "fill",  // Ensures proper image scaling without distortion
-                  marginLeft: "10px"
+                  marginLeft: "20px"
                 }}
               />
             </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
                   height: "42px",
                   borderRadius: "50%",
                   objectFit: "fill",
-                  marginLeft: "10px"
+                  marginLeft: "20px"
                 }}
               />
             </a>
