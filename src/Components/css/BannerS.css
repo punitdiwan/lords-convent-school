@@ -85,7 +85,7 @@
     }
 
     .carousel-inner {
-        width: 90%;
+        width: 100%;
         /* Ensure the inner container takes full width */
         height: 50vh;
         /* Let the height adjust based on image aspect ratio */
@@ -108,7 +108,7 @@
     }
 
     .carousel-inner {
-        width: 90%;
+        width: 100%;
         /* Ensure the inner container takes full width */
         height: 40vh;
         /* Let the height adjust based on image aspect ratio */
