@@ -5,7 +5,7 @@ const NobleSidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(prevState => !prevState);
+    setIsDropdownOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
@@ -14,11 +14,13 @@ const NobleSidebar = () => {
 
   return (
     <>
-
       <div className="rightbad" style={{ position: "relative", padding: "20px", width: "250px" }}>
         <div className="searchbox" style={{ marginBottom: "20px" }}>
           <input type="search" style={{ border: "1px solid #D1D5DB", padding: "8px", width: "80%" }} />
-          <button className="btn btn-lg" style={{ background: "#797A7B", color: "#fff", borderRadius: "4px", border: "none" }}>
+          <button
+            className="btn btn-lg"
+            style={{ background: "#797A7B", color: "#fff", borderRadius: "4px", border: "none" }}
+          >
             <i className="ri-search-line"></i>
           </button>
         </div>
@@ -32,7 +34,7 @@ const NobleSidebar = () => {
             color: "white",
             borderRadius: "2px",
             marginBottom: "20px",
-            fontSize: "15px"
+            fontSize: "15px",
           }}
         >
           <a className="text-center hogbtn" style={{ color: "white" }}>
@@ -67,6 +69,11 @@ const NobleSidebar = () => {
               }}
             >
               ABOUT US
+              {/* Arrow Toggle */}
+              <i
+                className={`ri-arrow-${isDropdownOpen ? "up" : "down"}-s-line`}
+                style={{ marginLeft: "10px" }}
+              ></i>
             </button>
 
             {/* Conditional Rendering of Dropdown */}
@@ -85,9 +92,7 @@ const NobleSidebar = () => {
                 }}
               >
                 <li>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/ourschool"
+                  <NavLink className="dropdown-item" to="/ourschool"
                   // style={{
                   //   textDecoration: "none",
                   //   color: "#797A7B",
@@ -99,9 +104,7 @@ const NobleSidebar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/boarddirector"
+                  <NavLink className="dropdown-item" to="/boarddirector"
                   // style={{
                   //   textDecoration: "none",
                   //   color: "#797A7B",
@@ -113,9 +116,7 @@ const NobleSidebar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/principal"
+                  <NavLink className="dropdown-item" to="/principal"
                   // style={{
                   //   textDecoration: "none",
                   //   color: "#797A7B",
@@ -186,7 +187,7 @@ const NobleSidebar = () => {
               borderRadius: "2px",
             }}
           >
-            The Lords Convent School was the first educational institute in
+            The Lords Convent School was the first educational institute in Bhopal to Win Shooting medal in InterSchool Competitions.
           </div>
         </div>
       </div>
@@ -307,7 +308,6 @@ const NobleSidebar = () => {
     
      */}
     </>
-
   );
 };
 
