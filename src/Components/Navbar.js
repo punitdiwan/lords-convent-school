@@ -12,7 +12,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navmid" >
-          <h1 style={{ fontFamily: "sans-serif", fontWeight: "bolder" }}  ><span id='firsth'>L</span>ORDS  <span id="firsth">C</span>ONVENT <span id="firsth">S</span>CHOOL</h1>
+          <h1 style={{ fontFamily: "sans-serif", fontWeight: "bolder", color: "#2F3A72" }}  ><span id='firsth'>L</span>ORDS  <span id="firsth">C</span>ONVENT <span id="firsth">S</span>CHOOL</h1>
           <p>Learning today. Leading tomorrow. Inspired Forever.</p>
         </div>
         <div className="navright">
