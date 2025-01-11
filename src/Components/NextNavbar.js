@@ -23,18 +23,18 @@ const NextNavbar = () => {
               <NavLink className="nav-link dropdown-toggle" style={{ color: "#2F3A72", fontWeight: "bold" }} href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ABOUT US
               </NavLink>
-              <div className="dropdown-menu" style={{ backgroundColor: "#fff", width: "auto" }} aria-labelledby="navbarDropdownMenuLink">
-                <NavLink className="dropdown-item" style={{ backgroundColor: "#fff", width: "100%", border: "none", color: "#2F3A72" }} to="/ourschool">OUR SCHOOL</NavLink>
-                <NavLink className="dropdown-item" style={{ backgroundColor: "#fff", width: "100%", border: "none", color: "#2F3A72" }} to="/boarddirector">BOARD OF DIRECTOR</NavLink>
-                <NavLink className="dropdown-item" style={{ backgroundColor: "#fff", width: "100%", border: "none", color: "#2F3A72" }} to="/principal">PRINCIPAL</NavLink>
+              <div className="dropdown-menu" style={{ backgroundColor: "#2F3A72", width: "auto" }} aria-labelledby="navbarDropdownMenuLink">
+                <NavLink className="dropdown-item" style={{ backgroundColor: "#2F3A72", width: "100%", border: "none", color: "#fff" }} to="/ourschool">OUR SCHOOL</NavLink>
+                <NavLink className="dropdown-item" style={{ backgroundColor: "#2F3A72", width: "100%", border: "none", color: "#fff" }} to="/boarddirector">BOARD OF DIRECTOR</NavLink>
+                <NavLink className="dropdown-item" style={{ backgroundColor: "#2F3A72", width: "100%", border: "none", color: "#fff" }} to="/principal">PRINCIPAL</NavLink>
               </div>
             </li>
             <li className="nav-item dropdown px-3">
               <NavLink className="nav-link dropdown-toggle" style={{ color: "#2F3A72", fontWeight: "bold" }} href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ACADEMIC
               </NavLink>
-              <div className="dropdown-menu" style={{ backgroundColor: "#fff", width: "auto" }} aria-labelledby="navbarDropdownMenuLink">
-                <NavLink className="dropdown-item" style={{ backgroundColor: "#fff", width: "100%", border: "none", color: "#2F3A72" }} to="/academicprocedure">ACADEMIC</NavLink>
+              <div className="dropdown-menu" style={{ backgroundColor: "#2F3A72", width: "auto" }} aria-labelledby="navbarDropdownMenuLink">
+                <NavLink className="dropdown-item" style={{ backgroundColor: "#2F3A72", width: "100%", border: "none", color: "#fff" }} to="/academicprocedure">ACADEMIC</NavLink>
 
               </div>
             </li>
