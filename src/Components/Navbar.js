@@ -32,7 +32,7 @@ const Navbar = () => {
               />
             </a>
 
-            <a href="https://www.instagram.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none" }}>
+            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hinsta.jpeg"
                 alt="Instagram"
@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             </a>
 
-            <a href="https://www.youtube.com/c/LCSBHOPAL" target="_blank" style={{ textDecoration: "none" }}>
+            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hutub.jpeg"
                 alt="YouTube"

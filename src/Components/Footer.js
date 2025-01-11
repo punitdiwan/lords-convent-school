@@ -34,8 +34,8 @@ const Footer = () => {
         <div className="fbrightt">
           <div className="socialmedia1">
             <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
-            <a href="" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
-            <a href="" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
+            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
+            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
 
 
           </div>
