@@ -187,7 +187,7 @@ const NobleSidebar = () => {
               borderRadius: "2px",
             }}
           >
-            The Lords Convent School was the first educational institute in Bhopal to Win Shooting medal in Inter School Competitions.
+            The lord's convent school was the first education institute in bhopal to provide shooting  facilities.
           </div>
         </div>
       </div>
