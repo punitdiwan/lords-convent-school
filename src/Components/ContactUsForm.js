@@ -68,7 +68,7 @@ const ContactUsForm = () => {
         if (name === "") {
             nameErr.firstNameEmpty = "Name is required";
             isValid = false;
-        } else if (name.trim().length < 5) {
+        } else if (name.trim().length < 3) {
             nameErr.firstNameShort = "Full name is too short";
             isValid = false;
         }
