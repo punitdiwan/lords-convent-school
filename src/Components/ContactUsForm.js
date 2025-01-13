@@ -11,8 +11,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 
 const ContactUsForm = () => {
-    const [disable, setDisable] = useState(false);
-
     const { addToast } = useToasts();
 
     const [name, setName] = useState("");
@@ -85,7 +83,7 @@ const ContactUsForm = () => {
         } else if (!pattern.test(mobile)) {
             mobileErr.mobilenumbershort = "Mobile number should be numeric";
             isValid = false;
-        } else if (mobile.trim().length != 10) {
+        } else if (mobile.trim().length !== 10) {
             mobileErr.mobilenumbershort = "Mobile number should be of ten digit";
             isValid = false;
         }

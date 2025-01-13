@@ -33,9 +33,9 @@ const Footer = () => {
         </div>
         <div className="fbrightt">
           <div className="socialmedia1">
-            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
-            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
-            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
+            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
+            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
 
 
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div> */}
           <div className="copyright mt-2">
-            <p id='copyr'>© Made with &nbsp;<i className="ri-heart-fill" style={{ color: "red", fontSize: "20px" }}> </i> <a style={{ color: "white", textDecoration: "none" }} target="_blank" href='https://maitretech.com/'>&nbsp; by Maitretech Solution</a></p>
+            <p id='copyr'>© Made with &nbsp;<i className="ri-heart-fill" style={{ color: "red", fontSize: "20px" }}> </i> <a style={{ color: "white", textDecoration: "none" }} target="_blank" rel="noreferrer" href='https://maitretech.com/'>&nbsp; by Maitretech Solution</a></p>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Footer = () => {
 
 
 
-      </div>
+      </div >
 
 
       <div className="fbtm">

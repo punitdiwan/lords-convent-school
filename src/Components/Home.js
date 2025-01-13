@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./css/BannerS.css";
 import "./css/LatestNews.css";
 import "./css/Admission.css";

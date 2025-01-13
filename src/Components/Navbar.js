@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         <div className="navright">
           <div className="socialmedia ">
-            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" style={{ textDecoration: "none" }}>
+            <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hfb.png"
                 alt="Facebook"
@@ -32,7 +32,7 @@ const Navbar = () => {
               />
             </a>
 
-            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" style={{ textDecoration: "none" }}>
+            <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hinsta.jpeg"
                 alt="Instagram"
@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             </a>
 
-            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" style={{ textDecoration: "none" }}>
+            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hutub.jpeg"
                 alt="YouTube"

@@ -49,6 +49,7 @@
     right: -20%;
     animation: mymove 15s linear infinite;
     z-index: 1;
+    color: #fff;
 
 }
 

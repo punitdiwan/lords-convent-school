@@ -56,7 +56,7 @@ const BoardD = () => {
                 {directorData?.fullUrl && (
                   <img
                     src={directorData.fullUrl.replace("http://", "https://")}
-                    alt={`Photo of ${directorData.directorName}`}
+                    alt={`${directorData.directorName}`}
                     className="director-image" // Add a class for image styling
                   />
                 )}
