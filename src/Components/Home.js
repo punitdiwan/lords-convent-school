@@ -52,7 +52,7 @@ const Home = () => {
           </div>
           <div className="lnewsright p-3">
             <div className="card_img1">
-              <img src="./images1/11.jpeg" alt="" />
+              <img src="./images1/28.jpeg" alt="" />
             </div>
             <div className="title">
               <h3 className="my-3 ak">Sports</h3>
