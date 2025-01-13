@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // If using react-router-dom for internal routing
+import { NavLink } from 'react-router-dom';
 
 const Updates = () => {
   return (
