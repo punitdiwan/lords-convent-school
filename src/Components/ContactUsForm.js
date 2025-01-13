@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./css/ContactUs.css";
-import { useToasts } from "react-toast-notifications";
+// import { useToasts } from "react-toast-notifications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,7 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 
 const ContactUsForm = () => {
-    const { addToast } = useToasts();
+    // const { addToast } = useToasts();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -46,12 +46,12 @@ const ContactUsForm = () => {
                         setMessage("");
                     }
                 })
-                .then((json) =>
-                    addToast("form submitted Sucessfully", {
-                        appearance: "success",
-                        autoDismiss: true,
-                    })
-                )
+                // .then((json) =>
+                //     addToast("form submitted Sucessfully", {
+                //         appearance: "success",
+                //         autoDismiss: true,
+                //     })
+                // )
                 .catch((err) => console.log(err));
         }
     };
