@@ -35,7 +35,7 @@ const Gallery = () => {
                             console.log("check", item)
                             return (
                                 <div key={i} className="one">
-                                    <img src={item?.photo?.data?.full_url?.replace('http://', 'https://')} className="mt-3 imght" alt={`Image ${i}`} />
+                                    <img src={item?.photo?.data?.full_url?.replace('http://', 'https://')} className="mt-3 imght" alt={`${i}`} />
                                 </div>
                             )
                         })
