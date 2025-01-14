@@ -93,8 +93,14 @@
 
 
 .emailus {
-    margin-top: 35px;
-    padding: 6px;
+    max-width: 660px;
+    /* Set a maximum width for the form */
+    width: 100%;
+    /* Ensure the form takes up 100% of the parent container */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
 }
 
 .emailus h5 {
@@ -111,6 +117,10 @@
     font-size: 2rem;
 }
 
+.form-control {
+    width: 100%;
+    /* Ensure the input fields take up full width within the form */
+}
 
 @media screen and (max-width:768px) {
     .latest_card_box_ad {

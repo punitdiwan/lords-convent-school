@@ -3,12 +3,8 @@ import "./css/ContactUs.css";
 // import { useToasts } from "react-toast-notifications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-    faUser,
-    faComment,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser, faComment } from "@fortawesome/free-solid-svg-icons";
 import { FaPhoneAlt } from "react-icons/fa";
-
 
 const ContactUsForm = () => {
     // const { addToast } = useToasts();
@@ -22,6 +18,7 @@ const ContactUsForm = () => {
     const [emailErr, setEmailErr] = useState({});
     const [mobileErr, setMobileErr] = useState({});
     const [messageErr, setMessageErr] = useState({});
+    const [successMessage, setSuccessMessage] = useState(""); // State for success message
 
     var pattern = new RegExp(/^[0-9\b]+$/);
 
@@ -44,6 +41,7 @@ const ContactUsForm = () => {
                         setEmail("");
                         setMobile("");
                         setMessage("");
+                        setSuccessMessage("Form submitted successfully!"); // Set the success message
                     }
                 })
                 // .then((json) =>
@@ -101,15 +99,10 @@ const ContactUsForm = () => {
         return isValid;
     };
 
-
-
-
     return (
         <>
-
-
             <div className="emailus">
-                <h5>
+                <h5 style={{ color: "#000" }}>
                     <span>|&nbsp;</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +110,7 @@ const ContactUsForm = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        style={{ width: "25px", color: "white" }}
+                        style={{ width: "25px", color: "#000" }}
                     >
                         <path
                             strokeLinecap="round"
@@ -261,29 +254,27 @@ const ContactUsForm = () => {
                     })}
                 </div>
 
+                {/* Success message */}
+                {successMessage && (
+                    <div style={{ color: "green", fontWeight: "700", fontSize: "15px" }}>
+                        {successMessage}
+                    </div>
+                )}
 
-                {/* <br /> */}
                 <div className="text-center">
                     <button
                         type="submit"
                         name="submit"
                         onClick={submit}
-                        // disabled={!disable}
                         value="send"
                         id="btnsubmit1"
                         className="py-2 btn btn-info btn-block rounded-0"
                         style={{ backgroundColor: "#94d1f5", color: "black" }}
                     >
-                        send
+                        Send
                     </button>
                 </div>
             </div>
-
-
-
-
-
-
         </>
     );
 };
