@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const AdmissionBanner = () => {
     const [banner, setBanner] = useState([]);
-    const [isOpen, setIsOpen] = useState(false); // Initially hidden
-    const [showBanner, setShowBanner] = useState(false); // State to control modal visibility
+    const [isOpen, setIsOpen] = useState(false);
+    const [showBanner, setShowBanner] = useState(false);
 
     // Fetch Banner data
     const getdata = async () => {
@@ -50,7 +50,7 @@ const AdmissionBanner = () => {
 
     // Get the image URL from the banner's data
     const getImageUrl = (bannerData) => {
-        console.log("bannerDatabannerData", bannerData);
+        console.log("bannerData", bannerData);
 
         // Access the full URL correctly based on the structure of your data
         const url = bannerData?.admission_banner?.data?.full_url?.replace('http://', 'https://');
@@ -82,15 +82,17 @@ const AdmissionBanner = () => {
                     {/* Modal Content */}
                     <div
                         style={{
-                            position: 'relative', // This makes the close button position relative to this container
+                            position: 'relative',
                             backgroundColor: 'white',
                             borderRadius: '8px',
                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                            width: '80%',
-                            maxWidth: '570px', // Adjusted max width for larger images
-                            padding: '0', // No padding for simplicity
+                            width: '90%', // Use 90% width for responsiveness
+                            maxWidth: '500px', // Adjusted max width for larger images
+                            padding: '0',
                             textAlign: 'center',
-                            height: '370px',
+                            minHeight: '30vh', // Allow modal height to adjust based on content
+                            maxHeight: '90vh', // Limit the height for larger screens
+                            overflow: 'hidden',
                         }}
                     >
                         {/* Close button */}
@@ -103,8 +105,8 @@ const AdmissionBanner = () => {
                                 backgroundColor: 'transparent',
                                 border: 'none',
                                 cursor: 'pointer',
-                                fontSize: '25px', // Larger button for better visibility
-                                zIndex: 1000, // Ensure it's above the image
+                                fontSize: '25px',
+                                zIndex: 1000,
                                 color: 'red',
                             }}
                         >
@@ -125,22 +127,20 @@ const AdmissionBanner = () => {
 
                         {/* Display Image from Banner's Brochure */}
                         <img
-                            src={getImageUrl(banner[0])} // Use the getImageUrl function to retrieve the full_url
+                            src={getImageUrl(banner[0])}
                             alt="Banner"
                             style={{
                                 width: '100%',
-                                maxHeight: '80vh', // Limit height for responsiveness
-                                objectFit: 'contain', // Ensures image scales well
+                                height: '100%', // Use 100% of the modal height
+                                objectFit: 'contain', // Ensures image scales well within the container
                                 borderRadius: '8px',
-                                overflow: 'hidden',
-
                             }}
                         />
                     </div>
                 </div>
             );
         }
-        return null; // Return null if the modal should not be displayed
+        return null;
     };
 
     return renderModal(); // Render the modal based on the state
