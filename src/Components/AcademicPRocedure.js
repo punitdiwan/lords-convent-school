@@ -4,8 +4,8 @@ import "./css/Academisp.css";
 
 const AcademicPRocedure = () => {
 
-  const [directorData, setDirectorData] = useState(null);
-  console.log("directorData", directorData);
+  const [AcademicPRocedure, setAcademicPRocedure] = useState(null);
+  console.log("AcademicPRocedure", AcademicPRocedure);
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -17,11 +17,11 @@ const AcademicPRocedure = () => {
         const data = await response.json();
         console.log("datadata", data);
 
-        const directorInfo = {
-          directorName: data.data[0]?.title,
-          directorMessage: data.data[0]?.academic_content,
+        const academicProcedureInfo = {
+          AcademicPRocedureTitle: data.data[0]?.title,
+          AcademicPRocedureContent: data.data[0]?.academic_content,
         };
-        setDirectorData(directorInfo);
+        setAcademicPRocedure(academicProcedureInfo);
       } catch (error) {
         console.error('Error fetching director message:', error);
         setError('Failed to load data. Please try again later.');
@@ -54,12 +54,12 @@ const AcademicPRocedure = () => {
           <div className="admssionleft text-left">
 
             <div className="title">
-              <h3 className="text-center" style={{ color: "black", fontWeight: "bold" }}>{directorData?.directorName || "N/A"}</h3>
+              <h3 className="text-center" style={{ color: "black", fontWeight: "bold" }}>{AcademicPRocedure?.AcademicPRocedureTitle || "N/A"}</h3>
 
 
               <h6
                 dangerouslySetInnerHTML={{
-                  __html: directorData?.directorMessage
+                  __html: AcademicPRocedure?.AcademicPRocedureContent
                 }}
               />
 
