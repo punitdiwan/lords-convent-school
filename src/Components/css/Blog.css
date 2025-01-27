@@ -1,0 +1,194 @@
+/* Styling for the main section */
+.youtube-main {
+    color: #03002f;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.product-1 img {
+    width: 150px;
+    margin-bottom: 3rem;
+}
+
+/* Styling for the blog cards layout */
+.blog-card-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card_image {
+    position: relative;
+    height: 200px;
+    /* Fixed height for the image */
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    /* Full width of the container */
+    height: 100%;
+    object-fit: fill;
+    /* Ensures the image covers the entire container without distortion */
+}
+
+.card_content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card_content h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.card_title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #005392;
+}
+
+.card_content a {
+    color: #005392;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+    /* Push 'Read More' link to the bottom */
+}
+
+.card_content a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect for card image */
+.card_image:hover::after {
+    transition: background 0.3s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+/* Styling for the blog details page */
+/* Styling for the Blog Details Page */
+/* Styling for the Blog Details Page */
+.blog-detail-container {
+    padding: 3rem 5rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.blog-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-detail-image-wrapper {
+    flex: 0 0 40%;
+    /* Image wrapper takes up 40% of the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.blog-detail-image {
+    margin-bottom: 20px;
+}
+
+.blog-detail-image-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.blog-detail-title {
+    font-size: 2rem;
+    color: #005392;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blog-detail-content {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 55%;
+}
+
+
+/* Adding a responsive behavior */
+@media (max-width: 768px) {
+    .product-1 img {
+        width: 120px;
+    }
+
+    .blog-card-main {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        /* Ensure cards take up full width on smaller screens */
+    }
+
+    .card_image {
+        height: 180px;
+        /* Adjust image size for smaller screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .blog-details-wrapper {
+        flex-direction: column;
+        /* Stack image and content vertically on small screens */
+        align-items: center;
+    }
+
+    .blog-detail-image-wrapper {
+        max-width: 100%;
+        /* Image wrapper takes full width */
+        margin-bottom: 20px;
+        /* Add space between image and content */
+    }
+
+    .blog-detail-content {
+        max-width: 100%;
+        /* Content takes full width */
+    }
+
+    .blog-detail-title {
+        font-size: 1.8rem;
+        /* Smaller title size for mobile */
+    }
+}

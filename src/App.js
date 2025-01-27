@@ -16,6 +16,8 @@ import Updates from './Components/Updates';
 import BoardD from './Components/BoardD';
 import Principal from './Components/Principal';
 import ScrollToTop from './Components/ScrollToTop';
+import Blogs from './Components/Blogs';
+import BlogDetails from './Components/BlogDetails';
 
 function App() {
   return (
@@ -32,12 +34,12 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog-details/:id" element={<BlogDetails />} />
             <Route path="/academicprocedure" element={<AcademicPRocedure />} />
             <Route path="/ourschool" element={<OurSchool />} />
             <Route path="/boarddirector" element={<BoardD />} />
             <Route path="/principal" element={<Principal />} />
-
-
           </Routes>
           <Footer />
         </BrowserRouter>

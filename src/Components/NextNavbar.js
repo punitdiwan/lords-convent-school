@@ -46,6 +46,9 @@ const NextNavbar = () => {
               <NavLink className="nav-link" style={{ color: "#2F3A72", fontWeight: "bold" }} to="/facilities">FACILITIES</NavLink>
             </li>
             <li className="nav-item px-3">
+              <NavLink className="nav-link" style={{ color: "#2F3A72", fontWeight: "bold" }} to="/blogs">BLOGS</NavLink>
+            </li>
+            <li className="nav-item px-3">
               <NavLink className="nav-link" style={{ color: "#2F3A72", fontWeight: "bold" }} to="/contactus">CONTACT US</NavLink>
             </li>
 
