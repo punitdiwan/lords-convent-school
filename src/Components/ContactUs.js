@@ -38,18 +38,18 @@ const ContactUs = () => {
               <hr />
               <p className="linkwrap">
                 <b className="bbb">Phone:</b>
-                <a className="linkwrap mnc" href="tel:+91 87704 07585">+91 87704 07585</a> ,
-                <a className="linkwrap mnc" href="tel:+91 89627 56297">+91 89627 56297</a>
+                <a className="linkwrap mnc" href="tel:+91 87704 07585"> +91 87704 07585</a> ,
+                <a className="linkwrap mnc" href="tel:+91 89627 56297"> +91 89627 56297</a>
               </p>
               <p className="linkwrap">
-                <b className="bbb">Address:</b>
+                <b className="bbb">Address: </b>
                 <span className="linkwrap mnc">
                   Near vijay nagar Vallabh nagar lalghati bhopal, (M.P) 462030
                 </span>
               </p>
               <p className="linkwrap">
                 <b className="bbb">Email:</b>
-                <a className="linkwrap mnc" href="mailto:lords_school@rediffmail.com">lords_school@rediffmail.com</a>
+                <a className="linkwrap mnc" href="mailto:lordsconventschool56@gmail.com"> lordsconventschool56@gmail.com</a>
               </p>
 
 

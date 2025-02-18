@@ -38,7 +38,7 @@ const NobleSidebar = () => {
           }}
         >
           {/* Replace <a> with a button if it does not link anywhere */}
-          <button className="text-center hogbtn" style={{ color: "white" }}>
+          <button className="text-center hogbtn" style={{ color: "black " }}>
             Lords Convent School
           </button>
         </div>

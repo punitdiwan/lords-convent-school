@@ -5,12 +5,12 @@ import NobleSidebar from "./NobleSidebar";
 const OurSchool = () => {
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="container-fluid mt-4 p-0">
 
 
 
 
-        <div className="container-fluid d-flex latest_card_box_ad p-0">
+        <div className="container-fluid  d-flex latest_card_box_ad p-0">
 
           <div className="ourschooleft px-5 text-left">
             {/* <h4 className="kalur text-center" style={{color:"black", fontWeight:"bold"}}>Our School</h4> */}
