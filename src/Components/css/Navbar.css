@@ -171,7 +171,9 @@
 
     .navleft .logo {
         height: auto;
-        width: 20vw;
+        width: 15vw;
+        margin-top: 10px;
+        
     }
 
     .navmid h1 {
@@ -216,7 +218,8 @@
 
     .navleft {
         width: 100%;
-        margin-bottom: 8px;
+        margin-top: 8px;
+        margin-bottom: 10px;
     }
 
     .navmid {
@@ -224,6 +227,7 @@
     }
 
     .navright {
+        margin-right: 25px;
         width: 100%;
     }
 
@@ -254,7 +258,7 @@
 
     .navleft .logo {
         height: auto;
-        width: 20vw;
+        width: 18vw;
     }
 
     .navmid h1 {

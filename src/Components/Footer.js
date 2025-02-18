@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="socialmedia1">
             <a href="https://www.facebook.com/LCSBHOPAL/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-facebook-fill"></i></a>
             <a href="https://www.instagram.com/lords_conventschool?igsh=MWFnbHkxMTQyeTRhcA==" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-instagram-fill"></i></a>
-            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
+            <a href="https://www.youtube.com/@Lords_conventschool" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "white" }}> <i className="ri-youtube-fill"></i></a>
 
 
           </div>

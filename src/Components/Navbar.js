@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             </a>
 
-            <a href="https://www.youtube.com/@LordsConventSchool" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+            <a href="https://www.youtube.com/@Lords_conventschool" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
               <img
                 src="/images1/hutub.jpeg"
                 alt="YouTube"
