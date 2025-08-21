@@ -9,11 +9,12 @@ const BoardD = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://cms.maitretech.com/lords-convent-school/items/director_message?fields=*.*");
+        const response = await fetch(`${baseUrl}/${school}/items/director_message?fields=*.*`);
         const data = await response.json();
         console.log("datadata", data);
 
@@ -32,7 +33,7 @@ const BoardD = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures useEffect runs once on component mount
+  }, [baseUrl,school]); // Empty dependency array ensures useEffect runs once on component mount
 
   if (isLoading) {
     return <p>Loading...</p>;

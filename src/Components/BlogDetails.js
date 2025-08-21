@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // useParams to get the dynamic ID from the URL
 import "./css/Blog.css"
@@ -5,14 +6,15 @@ import "./css/Blog.css"
 const BlogDetails = () => {
     const { id } = useParams(); // Get the blog id from the URL
     const [blogData, setBlogData] = useState(null);
-
+     const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
     useEffect(() => {
         getBlogData(id);
     }, [id]); // Re-run the effect if the ID changes
 
     const getBlogData = async (id) => {
         try {
-            const res = await fetch(`https://cms.maitretech.com/lords-convent-school/items/blogs/${id}?fields=*.*`);
+            const res = await fetch(`${baseUrl}/${school}/items/blogs/${id}?fields=*.*`);
             const result = await res.json();
             setBlogData(result.data);
         } catch (error) {
