@@ -7,8 +7,11 @@ const AdmissionBanner = () => {
 
     // Fetch Banner data
     const getdata = async () => {
+          const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
+ 
         try {
-            const res = await fetch('https://cms.maitretech.com/lords-convent-school/items/admission_banner?fields=*.*.*');
+            const res = await fetch(`${baseUrl}/${school}/items/admission_banner?fields=*.*.*`);
             const data = await res.json();
             console.log("Fetched data:", data);  // Log the full fetched data
 

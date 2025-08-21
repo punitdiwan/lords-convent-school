@@ -8,9 +8,11 @@ const Gallery = () => {
         const response = await axios.get(url);
         return response.data;
     };
+    const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
 
     // Replace API_ENDPOINT with the actual API endpoint
-    const API_ENDPOINT = "https://cms.maitretech.com/lords-convent-school/items/gallery?fields=*.*.*";
+    const API_ENDPOINT = `${baseUrl}/${school}/items/gallery?fields=*.*.*`;
     const { data, error } = useSWR(API_ENDPOINT, fetcher);
 
 

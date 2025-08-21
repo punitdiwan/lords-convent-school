@@ -5,11 +5,12 @@ const Facilities = () => {
   const [facilities, setFacilities] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://cms.maitretech.com/lords-convent-school/items/facilities?fields=*.*");
+        const response = await fetch(`${baseUrl}/${school}/items/facilities?fields=*.*`);
         const data = await response.json();
         console.log("data", data);
 
@@ -30,7 +31,7 @@ const Facilities = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures useEffect runs once on component mount
+  }, [school,baseUrl]); // Empty dependency array ensures useEffect runs once on component mount
 
   if (isLoading) {
     return <p>Loading...</p>;

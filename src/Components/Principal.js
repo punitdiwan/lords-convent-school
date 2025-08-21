@@ -6,12 +6,13 @@ const Principal = () => {
   const [principleData, setPrincipleData] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // State for loading
   const [error, setError] = useState(null); // State for error handling
-
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://cms.maitretech.com/lords-convent-school/items/principle_message?fields=*.*"
+          `${baseUrl}/${school}/items/principle_message?fields=*.*`
         );
         const data = await response.json();
         if (data?.data?.length > 0) {
@@ -28,7 +29,7 @@ const Principal = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array to run useEffect only once on component mount
+  }, [baseUrl,school]); // Empty dependency array to run useEffect only once on component mount
 
   // Render loading or error states
   if (isLoading) {

@@ -21,13 +21,14 @@ const ContactUsForm = () => {
     const [successMessage, setSuccessMessage] = useState(""); // State for success message
 
     var pattern = new RegExp(/^[0-9\b]+$/);
-
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
     const submit = (e) => {
         e.preventDefault();
         const isValid = formValidation();
         if (isValid) {
             fetch(
-                "https://cms.maitretech.com/lords-convent-school/items/contact_form?fields=*.*.*",
+                `${baseUrl}/${school}/items/contact_form?fields=*.*.*`,
                 {
                     method: "POST",
                     body: JSON.stringify({ full_name: name, email, mobile, message }),

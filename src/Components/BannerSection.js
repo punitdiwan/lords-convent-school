@@ -8,10 +8,11 @@ const BannerSection = () => {
   const [slides, setSlides] = useState([]);
   const [selectedSlide, setSelectedSlide] = useState(0);
   const slideIntervalDuration = 4000; // 4 seconds for automatic slide change
-
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
   useEffect(() => {
     // Fetch the slides data
-    fetch('https://cms.maitretech.com/lords-convent-school/items/slider?fields=*.*.*')
+    fetch(`${baseUrl}/${school}/items/slider?fields=*.*.*`)
       .then(response => response.json())
       .then(data => {
         // Assuming the slides array is in the data property
@@ -32,7 +33,7 @@ const BannerSection = () => {
 
     // Cleanup on unmount
     return () => clearInterval(slideInterval);
-  }, [slides.length]); // Ensure the effect runs when slides are fetched or updated
+  }, [slides.length,school,baseUrl]); // Ensure the effect runs when slides are fetched or updated
 
   // Function to handle manual slide change (optional, if you still want controls)
   const handleManualChange = (direction) => {

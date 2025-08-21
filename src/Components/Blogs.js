@@ -5,14 +5,16 @@ import "./css/Blog.css"
 const Blogs = () => {
     const [blog, setBlog] = useState([]);
     console.log("blog", blog);
-
+     const baseUrl = process.env.REACT_APP_BASE_URL;
+    const school = process.env.REACT_APP_SCHOOL;
     useEffect(() => {
         getdata();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const getdata = async () => {
         try {
-            const res = await fetch('https://cms.maitretech.com/lords-convent-school/items/blogs?fields=*.*');
+            const res = await fetch(`${baseUrl}/${school}/items/blogs?fields=*.*`);
             const data = await res.json();
             setBlog(data.data);
         } catch (error) {
